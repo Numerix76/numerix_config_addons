@@ -23,6 +23,8 @@ Now you can edit file config and language of the script you have
 
 [Open Script](https://steamcommunity.com/sharedfiles/filedetails/?id=1989483988)
 
+[Phone Box](https://steamcommunity.com/sharedfiles/filedetails/?id=1989484260)
+
 [Radio (Youtube/MP3/SoundCloud)](https://steamcommunity.com/sharedfiles/filedetails/?id=1989484474)
 
 [SoundBrowser](https://steamcommunity.com/sharedfiles/filedetails/?id=1989484763)
