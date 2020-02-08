@@ -4,7 +4,7 @@ TAB made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TAB.Language.VersionCustom = "1.0.0" --DON'T TOUCH THIS
+TAB.Language.VersionCustom = "1.0.1" --DON'T TOUCH THIS
 
 TAB.Language["custom"] = {
 	["Number of players"] = "Number of players",
@@ -18,6 +18,10 @@ TAB.Language["custom"] = {
 	["Year(s)"] = "Year(s)",
 	["Choose the time of the ban (0 = permanent)"] = "Choose the time of the ban (0 = permanent)",
 	["Validate"] = "Validate",
+	
+	--1.0.1
+	["Settings"] = "Settings",
+	["Players List"] = "Players List",
 
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
