@@ -4,7 +4,7 @@ ContextMenu Identity made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-ContextMenuIdentity.Settings.VersionCustom = "1.0.0" --DON'T TOUCH THIS
+ContextMenuIdentity.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
 
 --Change the language
 ContextMenuIdentity.Settings.Language = "en"
@@ -64,7 +64,7 @@ if CLIENT then --DON'T TOUCH THIS
 				if DarkRP.disabledDefaults["modules"]["hungermod"] then
 					return "Health : "..ply:Health().."  Amor : "..ply:Armor() 
 				else
-					return "Health : "..ply:Health().."  Amor : "..ply:Armor().."  Food : "..ply:getDarkRPVar( "Energy" )
+					return "Health : "..ply:Health().."  Amor : "..ply:Armor().."  Food : "..math.Round(ply:getDarkRPVar( "Energy" ))
 				end
 			end,
 		},
