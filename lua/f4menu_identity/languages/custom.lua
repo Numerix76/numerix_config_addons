@@ -4,7 +4,7 @@ F4Menu made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-F4Menu.Language.VersionCustom = "1.0.1" --DON'T TOUCH THIS
+F4Menu.Language.VersionCustom = "1.0.2" --DON'T TOUCH THIS
 
 F4Menu.Language["custom"] = {
 	["Quit"] = "Quit",
@@ -24,4 +24,8 @@ F4Menu.Language["custom"] = {
 	
 	--1.0.1
 	["Choose a model"] = "Choose a model",
+	
+	--1.0.2
+
+	["Level"] = "Level",
 }
