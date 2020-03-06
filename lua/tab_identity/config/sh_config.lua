@@ -4,7 +4,7 @@ TAB made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TAB.Settings.VersionCustom = "1.0.0" --DON'T TOUCH THIS
+TAB.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
 
 --Change the language
 TAB.Settings.Language = "en"
@@ -27,6 +27,8 @@ TAB.Settings.Staff = {
 if CLIENT then --DON'T TOUCH THIS
 
     --Action available on players
+    --Some of them use the Fadmin command use on DarkRP so you have to change command to an available and remove 
+    --"DarkRP and !DarkRP.disabledDefaults["modules"]["fadmin"] and" in visible
     TAB.Settings.ActionPlayer = {
         {
             text = "Mute/UnMute",
@@ -130,7 +132,7 @@ if CLIENT then --DON'T TOUCH THIS
                 ply:ConCommand('FSpectate '..selected:UserID()) 
             end,
             visible = function(ply) 
-                return FAdmin.Access.PlayerHasPrivilege(ply, "Spectate")
+                return DarkRP and !DarkRP.disabledDefaults["modules"]["fadmin"] and FAdmin.Access.PlayerHasPrivilege(ply, "Spectate")
             end,
         },
         {
@@ -162,7 +164,7 @@ if CLIENT then --DON'T TOUCH THIS
                 TAB.OpenSetTeam(selected:UserID())
             end,
             visible = function(ply) 
-                return FAdmin.Access.PlayerHasPrivilege(ply, "SetTeam")
+                return DarkRP and !DarkRP.disabledDefaults["modules"]["fadmin"] and FAdmin.Access.PlayerHasPrivilege(ply, "SetTeam")
             end,
         },
         {
@@ -182,11 +184,11 @@ if CLIENT then --DON'T TOUCH THIS
                 end 
             end,
             visible = function(ply) 
-                return FAdmin.Access.PlayerHasPrivilege(ply, "SetNoclip")
+                return DarkRP and !DarkRP.disabledDefaults["modules"]["fadmin"] and FAdmin.Access.PlayerHasPrivilege(ply, "SetNoclip")
             end,
         },
         {
-            text = "Cloack/Uncloack",
+            text = "Cloack",
             icon = function(ply, selected) 
                 if not selected:FAdmin_GetGlobal("FAdmin_cloaked") then
                     return "numerix_tab/cloackoff.png"
@@ -202,7 +204,7 @@ if CLIENT then --DON'T TOUCH THIS
                 end
             end,
             visible = function(ply) 
-                return FAdmin.Access.PlayerHasPrivilege(ply, "Cloak")
+                return DarkRP and !DarkRP.disabledDefaults["modules"]["fadmin"] and FAdmin.Access.PlayerHasPrivilege(ply, "Cloak")
             end,
         },
     }
