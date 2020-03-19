@@ -4,7 +4,7 @@ Escape made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Echap.Settings.VersionCustom = "1.0.0" --DON'T TOUCH THIS
+Echap.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
 
 --Change the language
 Echap.Settings.Language = "en"
@@ -24,6 +24,9 @@ Echap.Settings.URLServesTabs = "https://gmod-radio-numerix.mtxserv.com/escape_ap
 
 --Enable the compatibility with https://www.gmodstore.com/market/view/updatenotify-discord-inspired-update-notification-system ?
 Echap.Settings.UseUpdateNotify = false
+
+--Show Quit button ?
+Echap.Settings.QuitButton = true
 
 --Change the actual news
 Echap.Settings.News =
