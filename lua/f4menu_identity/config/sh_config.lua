@@ -4,7 +4,7 @@ F4Menu made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-F4Menu.Settings.VersionCustom = "1.0.0" --DON'T TOUCH THIS
+F4Menu.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
 
 --Change the language
 F4Menu.Settings.Language = "en"
@@ -24,6 +24,9 @@ F4Menu.Settings.ShowSlot = true
 
 --Show Model of job ?
 F4Menu.Settings.ShowModel = true
+
+--Show Quit button ?
+F4Menu.Settings.QuitButton = true
 
 --[[ -----------------------------------------------------------------------------------------------
 
