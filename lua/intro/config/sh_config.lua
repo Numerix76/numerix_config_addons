@@ -4,7 +4,7 @@ Cinematic Intro made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Intro.Settings.VersionCustom = "1.0.0" --DON'T TOUCH THIS
+Intro.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
 
 --Change the language
 Intro.Settings.Language = "en"
@@ -27,8 +27,8 @@ Intro.Settings.AlwaysShow = false
 --Remove the "Skip introduction" button ?
 Intro.Settings.ForceIntro = false
 
---Music link (Works with Youtube, SoundCloud and MP3)
-Intro.Settings.URLMusic = "https://www.youtube.com/watch?v=zIh5AHxh-Ok"
+--Music link (Works ONLY with MP3)
+Intro.Settings.URLMusic = "https://gmod-radio-numerix.mtxserv.com/exemple/Calvin%20Harris%20-%20Summer.mp3"
 
 --Music volume (between 0 and 1)
 Intro.Settings.MusicVolume = 0.3
