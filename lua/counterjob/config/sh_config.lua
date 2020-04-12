@@ -4,7 +4,7 @@ Counter Job made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-CounterJob.Settings.VersionCustom = "1.0.0" --DON'T TOUCH THIS
+CounterJob.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
 
 --Change the language
 CounterJob.Settings.Language = "en"
@@ -13,6 +13,9 @@ if CLIENT then --DON'T TOUCH THIS
     
     --Time between refreshes in seconds (do not set it too low)
     CounterJob.Settings.Refresh = 5
+    
+    --Show HUD ? (You can use CounterJob.GetInfo() to integrate it where you want)
+    CounterJob.Settings.DrawHUD = true
 
     --Font size
     CounterJob.Settings.TextFont = 20 
