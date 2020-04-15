@@ -4,7 +4,7 @@ TAB made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TAB.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
+TAB.Settings.VersionCustom = "1.0.2" --DON'T TOUCH THIS
 
 --Change the language
 TAB.Settings.Language = "en"
@@ -129,7 +129,7 @@ if CLIENT then --DON'T TOUCH THIS
                 return "numerix_tab/spectate.png"
             end,
             func = function(ply, selected) 
-                ply:ConCommand('FSpectate '..selected:UserID()) 
+                ply:ConCommand('FSpectate "'..selected:Name()..'"') 
             end,
             visible = function(ply) 
                 return DarkRP and !DarkRP.disabledDefaults["modules"]["fadmin"] and FAdmin.Access.PlayerHasPrivilege(ply, "Spectate")
@@ -161,7 +161,7 @@ if CLIENT then --DON'T TOUCH THIS
                 return "numerix_tab/setteam.png"
             end,
             func = function(ply, selected) 
-                TAB.OpenSetTeam(selected:UserID())
+                TAB.OpenSetTeam(selected:Name())
             end,
             visible = function(ply) 
                 return DarkRP and !DarkRP.disabledDefaults["modules"]["fadmin"] and FAdmin.Access.PlayerHasPrivilege(ply, "SetTeam")
@@ -178,9 +178,9 @@ if CLIENT then --DON'T TOUCH THIS
             end,
             func = function(ply, selected) 
                 if selected:FAdmin_GetGlobal("FADmin_DisableNoclip") then
-                    RunConsoleCommand("_FAdmin", "SetNoclip", selected:UserID(), 1)
+                    ply:ConCommand('_FAdmin SetNoclip "'..selected:Name()..'" 1')
                 else
-                    RunConsoleCommand("_FAdmin", "SetNoclip", selected:UserID(), 0)
+                    ply:ConCommand('_FAdmin SetNoclip "'..selected:Name()..'" 0')
                 end 
             end,
             visible = function(ply) 
@@ -198,9 +198,9 @@ if CLIENT then --DON'T TOUCH THIS
             end,
             func = function(ply, selected) 
                 if not selected:FAdmin_GetGlobal("FAdmin_cloaked") then
-                    RunConsoleCommand("_FAdmin", "Cloak", selected:UserID())
+                    ply:ConCommand('_FAdmin Cloak "'..selected:Name()..'"')
                 else
-                    RunConsoleCommand("_FAdmin", "Uncloak", selected:UserID())
+                    ply:ConCommand('_FAdmin Uncloak "'..selected:Name()..'"')
                 end
             end,
             visible = function(ply) 
