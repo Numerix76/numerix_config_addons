@@ -4,7 +4,7 @@ Phone made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Phone.Language.VersionCustom = "1.0.0" --DON'T TOUCH THIS
+Phone.Language.VersionCustom = "1.0.1" --DON'T TOUCH THIS
 
 Phone.Language["custom"] = {
 	["What do you want to do ?"] = "What do you want to do ?",
@@ -27,4 +27,5 @@ Phone.Language["custom"] = {
 
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
+	["A new version of the addon is available. Please download it."] = "A new version of the addon is available. Please download it.",
 }
