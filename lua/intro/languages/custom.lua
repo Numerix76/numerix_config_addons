@@ -4,7 +4,7 @@ Cinematic Intro made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Intro.Language.VersionCustom = "1.0.1" --DON'T TOUCH THIS
+Intro.Language.VersionCustom = "1.0.2" --DON'T TOUCH THIS
 
 Intro.Language["custom"] = {
 	["Start the introduction"] = "Start the introduction",
@@ -18,4 +18,5 @@ Intro.Language["custom"] = {
 
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
+	["A new version of the addon is available. Please download it."] = "A new version of the addon is available. Please download it.",
 }
