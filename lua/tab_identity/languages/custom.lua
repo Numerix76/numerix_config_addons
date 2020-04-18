@@ -4,7 +4,7 @@ TAB made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TAB.Language.VersionCustom = "1.0.2" --DON'T TOUCH THIS
+TAB.Language.VersionCustom = "1.0.3" --DON'T TOUCH THIS
 
 TAB.Language["custom"] = {
 	["Number of players"] = "Number of players",
@@ -25,6 +25,7 @@ TAB.Language["custom"] = {
 
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
+	["A new version of the addon is available. Please download it."] = "A new version of the addon is available. Please download it.",
 
 	--1.0.2
 	["Disconnected"] = "Disconected",
