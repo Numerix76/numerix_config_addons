@@ -4,7 +4,7 @@ F4Menu made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-F4Menu.Language.VersionCustom = "1.0.2" --DON'T TOUCH THIS
+F4Menu.Language.VersionCustom = "1.0.3" --DON'T TOUCH THIS
 
 F4Menu.Language["custom"] = {
 	["Quit"] = "Quit",
@@ -21,6 +21,7 @@ F4Menu.Language["custom"] = {
 
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
+	["A new version of the addon is available. Please download it."] = "A new version of the addon is available. Please download it.",
 	
 	--1.0.1
 	["Choose a model"] = "Choose a model",
