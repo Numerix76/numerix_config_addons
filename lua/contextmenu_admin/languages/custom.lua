@@ -4,7 +4,7 @@ ContextMenu Admin made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-ContextMenuAdmin.Language.VersionCustom = "1.0.0" --DON'T TOUCH THIS
+ContextMenuAdmin.Language.VersionCustom = "1.0.1" --DON'T TOUCH THIS
 
 ContextMenuAdmin.Language["custom"] = {
 	["Action on the player"] = "Action on the player",
@@ -30,4 +30,5 @@ ContextMenuAdmin.Language["custom"] = {
 
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
+	["A new version of the addon is available. Please download it."] = "A new version of the addon is available. Please download it.",
 }
