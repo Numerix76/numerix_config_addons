@@ -4,7 +4,7 @@ TAB made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TAB.Language.VersionCustom = "1.0.3" --DON'T TOUCH THIS
+TAB.Language.VersionCustom = "1.0.4" --DON'T TOUCH THIS
 
 TAB.Language["custom"] = {
 	["Number of players"] = "Number of players",
@@ -29,4 +29,10 @@ TAB.Language["custom"] = {
 
 	--1.0.2
 	["Disconnected"] = "Disconected",
+	
+	--1.0.4
+	["Click to copy"] = "Click to copy",
+	["to clipboard"] = "to clipboard",
+	["copied to clipboard!"] = "copied to clipboard!",
+	["Player options"] = "Player options",
 }
