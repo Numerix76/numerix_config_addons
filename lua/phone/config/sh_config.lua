@@ -4,7 +4,7 @@ Phone made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Phone.Settings.VersionCustom = "1.0.0" --DON'T TOUCH THIS
+Phone.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
 
 --Change the language
 Phone.Settings.Language = "en"
@@ -20,6 +20,9 @@ Phone.Settings.AdvertPrice = 75
 
 --Price of the ano message
 Phone.Settings.AnoPrice = 100
+
+--Activate the gouvernement message ?
+Phone.Settings.GouvMessage = true
 
 --Price to contact the government
 Phone.Settings.GouvPrice = 50
