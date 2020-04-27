@@ -4,7 +4,7 @@ ContextMenu Identity made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-ContextMenuIdentity.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
+ContextMenuIdentity.Settings.VersionDefault = "1.0.2" --DON'T TOUCH THIS
 
 --Change the language
 ContextMenuIdentity.Settings.Language = "en"
@@ -69,7 +69,6 @@ if CLIENT then --DON'T TOUCH THIS
 			end,
 		},
 	}
-
 	--[[ -----------------------------------------------------------------------------------------------
 
 			Visibility          =>  Button visible ? (Work like the customCheck of DarkRP)
@@ -79,12 +78,24 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc                =>  Description of the button
 
 			Icon				=>  Icone of the button (keep empty to remove)
+
+			NotDrawLine			=> 	Don't show a line around the button ?
+
+			ColorLine			=> 	Color of the line around the button
+
+			ColorBase			=>	Color of the button background
+
+			ColorHover			=>	Color of the button when you are hover it or press it
+
+			ColorText			=> 	Color of the text
+
+			ColorImage 			=>	Color of the image
 			
 			DoFunc				=>  Action to execute
 
 			Space				=>  Make a space ? example : 	{
 																	Visibility = function(ply) 
-																		if CLIENT then return true end
+																		return true
 																	end,
 																	Space = true,   
 																}, 
@@ -100,8 +111,14 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Drop money",
 			Space = false,
 			Icon = "numerix_context/money.png",
+			NotDrawLine = false,
+			ColorLine = Color( 255, 255, 255, 100 ),
+			ColorBase = Color(33, 31, 35, 200),
+			ColorHover = Color( 0, 0, 0, 100 ),
+			ColorText = Color( 255, 255, 255, 255 ),
+			ColorImage = Color(255,255,255,255),
 			DoFunc = function(ply)
-			if CLIENT then ContextMenuIdentity.OpenTextEntry("Drop Money", "How much ?", "/dropmoney") end
+				ContextMenuIdentity.OpenTextEntry("Drop Money", "How much ?", "/dropmoney")
 			end,
 		},
 		{
@@ -112,8 +129,14 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Drop your actual weapon.",
 			Space = false,
 			Icon = "numerix_context/weapons.png",
+			NotDrawLine = false,
+			ColorLine = Color( 255, 255, 255, 100 ),
+			ColorBase = Color(33, 31, 35, 200),
+			ColorHover = Color( 0, 0, 0, 100 ),
+			ColorText = Color( 255, 255, 255, 255 ),
+			ColorImage = Color(255,255,255,255),
 			DoFunc = function(ply)
-			if CLIENT then ply:ConCommand("say /drop") end
+				ply:ConCommand("say /drop")
 			end,
 		},
 		{
@@ -124,8 +147,14 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Call an admin if you have trouble.",
 			Space = false,
 			Icon = "numerix_context/staff.png",
+			NotDrawLine = false,
+			ColorLine = Color( 255, 255, 255, 100 ),
+			ColorBase = Color(33, 31, 35, 200),
+			ColorHover = Color( 0, 0, 0, 100 ),
+			ColorText = Color( 255, 255, 255, 255 ),
+			ColorImage = Color(255,255,255,255),
 			DoFunc = function(ply)
-				if CLIENT then ContextMenuIdentity.OpenTextEntry("Call an admin", "What is your problem ?", "///") end
+				ContextMenuIdentity.OpenTextEntry("Call an admin", "What is your problem ?", "///")
 			end,
 		},
 		{
@@ -142,8 +171,14 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Link for the discord server.",
 			Space = false,
 			Icon = "numerix_context/discord.png",
+			NotDrawLine = false,
+			ColorLine = Color( 255, 255, 255, 100 ),
+			ColorBase = Color(33, 31, 35, 200),
+			ColorHover = Color( 0, 0, 0, 100 ),
+			ColorText = Color( 255, 255, 255, 255 ),
+			ColorImage = Color(255,255,255,255),
 			DoFunc = function(ply)
-				if CLIENT then gui.OpenURL("https://discord.gg") end
+				gui.OpenURL("https://discord.gg")
 			end,
 		},
 		{
@@ -154,8 +189,14 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Link for the website.",
 			Space = false,
 			Icon = "numerix_context/site.png",
+			NotDrawLine = false,
+			ColorLine = Color( 255, 255, 255, 100 ),
+			ColorBase = Color(33, 31, 35, 200),
+			ColorHover = Color( 0, 0, 0, 100 ),
+			ColorText = Color( 255, 255, 255, 255 ),
+			ColorImage = Color(255,255,255,255),
 			DoFunc = function(ply)
-				if CLIENT then gui.OpenURL("https://google.com") end
+				gui.OpenURL("https://google.com")
 			end,
 		},
 		{
@@ -166,18 +207,30 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Link for the forum.",
 			Space = false,
 			Icon = "numerix_context/forum.png",
+			NotDrawLine = false,
+			ColorLine = Color( 255, 255, 255, 100 ),
+			ColorBase = Color(33, 31, 35, 200),
+			ColorHover = Color( 0, 0, 0, 100 ),
+			ColorText = Color( 255, 255, 255, 255 ),
+			ColorImage = Color(255,255,255,255),
 			DoFunc = function(ply)
 				gui.OpenURL("https://google.com")
 			end,
 		},
 		{
 			Visibility = function(ply) 
-				return true
+				return ContextMenuIdentity.Settings.StaffGroup[ply:GetUserGroup()]
 			end,
 			Name = "Shop",
 			Desc = "Link for the shop.",
 			Space = false,
 			Icon = "numerix_context/boutique.png",
+			NotDrawLine = false,
+			ColorLine = Color( 255, 255, 255, 100 ),
+			ColorBase = Color(33, 31, 35, 200),
+			ColorHover = Color( 0, 0, 0, 100 ),
+			ColorText = Color( 255, 255, 255, 255 ),
+			ColorImage = Color(255,255,255,255),
 			DoFunc = function(ply)
 				gui.OpenURL("https://google.com")
 			end,
