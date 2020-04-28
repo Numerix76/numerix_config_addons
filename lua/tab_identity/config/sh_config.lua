@@ -4,13 +4,16 @@ TAB made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TAB.Settings.VersionCustom = "1.0.2" --DON'T TOUCH THIS
+TAB.Settings.VersionCustom = "1.0.3" --DON'T TOUCH THIS
 
 --Change the language
 TAB.Settings.Language = "en"
 
 --Show player job ?
 TAB.Settings.ShowJob = true
+
+--Possibility to click on a player and see more action
+TAB.Settings.PlayerTab = true
 
 --Good ping
 TAB.Settings.PingGood = 50
