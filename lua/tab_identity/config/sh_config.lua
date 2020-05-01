@@ -4,13 +4,19 @@ TAB made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TAB.Settings.VersionCustom = "1.0.3" --DON'T TOUCH THIS
+TAB.Settings.VersionCustom = "1.0.4" --DON'T TOUCH THIS
 
 --Change the language
 TAB.Settings.Language = "en"
 
---Show player job ?
-TAB.Settings.ShowJob = true
+--Keep empty to show anything of option below
+--Put "job" to show ONLY the job of the player
+--Put "rank" to show ONLY the rank of the player
+--Put "job+rank" to show the job and the rank of the player
+TAB.Settings.ShowJobULX = "job+rank"
+
+--Change the color of the name and the job or rank depending of the color of the job ?
+TAB.Settings.ColorJob = false
 
 --Possibility to click on a player and see more action
 TAB.Settings.PlayerTab = true
@@ -25,6 +31,13 @@ TAB.Settings.PingMedium = 100
 TAB.Settings.Staff = {
     ["superadmin"] = true,
     ["admin"] = true,
+}
+
+--Change the name of a rank to be show (if a rank is not present here the script will show the basic name)
+TAB.Settings.RankName = {
+    ["superadmin"] = "Superadmin",
+    ["admin"] = "Admin",
+    ["user"] = "User",
 }
 
 if CLIENT then --DON'T TOUCH THIS
