@@ -4,7 +4,7 @@ Escape made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Echap.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
+Echap.Settings.VersionCustom = "1.0.2" --DON'T TOUCH THIS
 
 --Change the language
 Echap.Settings.Language = "en"
@@ -63,6 +63,13 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Home",
         OnLoadInit = false,
         Icon = "numerix_echap/play-button.png",
+        NotDrawLine = false,
+        ColorLine = Color( 255, 255, 255, 100 ),
+        ColorBase = Color(33, 31, 35, 200),
+        ColorHover = Color( 0, 0, 0, 100 ),
+        ColorText = Color( 255, 255, 255, 255 ),
+        ColorImage = Color(255,255,255,255),
+        ColorSelected = Color(47, 174, 79, 100),
         DoFunc = function()
             Echap:Launch()
         end
@@ -74,7 +81,13 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_News",
         OnLoadInit = false,
         Icon = "numerix_echap/newspaper.png",
-
+        NotDrawLine = false,
+        ColorLine = Color( 255, 255, 255, 100 ),
+        ColorBase = Color(33, 31, 35, 200),
+        ColorHover = Color( 0, 0, 0, 100 ),
+        ColorText = Color( 255, 255, 255, 255 ),
+        ColorImage = Color(255,255,255,255),
+        ColorSelected = Color(47, 174, 79, 100),
     },
     {
         Enabled = true,
@@ -83,6 +96,13 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Rules",
         OnLoadInit = false,
         Icon = "numerix_echap/settings.png",
+        NotDrawLine = false,
+        ColorLine = Color( 255, 255, 255, 100 ),
+        ColorBase = Color(33, 31, 35, 200),
+        ColorHover = Color( 0, 0, 0, 100 ),
+        ColorText = Color( 255, 255, 255, 255 ),
+        ColorImage = Color(255,255,255,255),
+        ColorSelected = Color(47, 174, 79, 100),
         DoFunc = function()
             RunConsoleCommand("gamemenucommand", "openoptionsdialog")
             timer.Simple( 0, function() RunConsoleCommand("gameui_activate") end )
@@ -95,6 +115,13 @@ Echap.Settings.Navigation =
         WebsiteEnabled = true,
         WebsiteURL = "https://google.com/",
         Icon = "numerix_echap/cursor.png",
+        NotDrawLine = false,
+        ColorLine = Color( 255, 255, 255, 100 ),
+        ColorBase = Color(33, 31, 35, 200),
+        ColorHover = Color( 0, 0, 0, 100 ),
+        ColorText = Color( 255, 255, 255, 255 ),
+        ColorImage = Color(255,255,255,255),
+        ColorSelected = Color(47, 174, 79, 100),
     },
     --Enable only if you have https://github.com/Tomelyr/Server-Hopping-Bunny
     {
@@ -104,6 +131,13 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Servers",
         OnLoadInit = false,
         Icon = "numerix_echap/server.png",
+        NotDrawLine = false,
+        ColorLine = Color( 255, 255, 255, 100 ),
+        ColorBase = Color(33, 31, 35, 200),
+        ColorHover = Color( 0, 0, 0, 100 ),
+        ColorText = Color( 255, 255, 255, 255 ),
+        ColorImage = Color(255,255,255,255),
+        ColorSelected = Color(47, 174, 79, 100),
     },
 }
 
