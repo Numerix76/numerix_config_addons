@@ -36,6 +36,6 @@ TimerPrison.Settings.MakeWhitelist = false
 -- TEAM which can see the HUD
 timer.Simple(1, function() --DON'T TOUCH THIS
     TimerPrison.Settings.WhitelistTeam = {
-        [TEAM_CITIZEN] = true
+        [TEAM_CITIZEN] = true,
     }
 end) --DON'T TOUCH THIS
