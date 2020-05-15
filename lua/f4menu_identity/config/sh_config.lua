@@ -4,7 +4,7 @@ F4Menu made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-F4Menu.Settings.VersionCustom = "1.0.2" --DON'T TOUCH THIS
+F4Menu.Settings.VersionCustom = "1.0.3" --DON'T TOUCH THIS
 
 --Change the language
 F4Menu.Settings.Language = "en"
@@ -24,9 +24,6 @@ F4Menu.Settings.ShowSlot = true
 
 --Show Model of job ?
 F4Menu.Settings.ShowModel = true
-
---Show Quit button ?
-F4Menu.Settings.QuitButton = true
 
 --[[ -----------------------------------------------------------------------------------------------
 
@@ -170,7 +167,26 @@ F4Menu.Settings.Navigation =
         ColorText = Color( 255, 255, 255, 255 ),
         ColorImage = Color(255,255,255,255),
         ColorSelected = Color(47, 174, 79, 100),
-    },    
+    }, 
+    
+    {
+        Enabled = true,
+        Name = "QUIT",
+        Desc = "Quit the server",
+        DoLoadPanel = "Echap_Tab_Servers",
+        OnLoadInit = false,
+        Icon = "numerix_echap/disconnect.png",
+        NotDrawLine = false,
+        ColorLine = Color( 255, 255, 255, 100 ),
+        ColorBase = Color(33, 31, 35, 200),
+        ColorHover = Color( 0, 0, 0, 100 ),
+        ColorText = Color( 255, 255, 255, 255 ),
+        ColorImage = Color(255,255,255,255),
+        ColorSelected = Color(47, 174, 79, 100),
+        DoFunc = function()
+            RunConsoleCommand("disconnect")
+        end
+    },
 }
 
 --Color backgroud for items
