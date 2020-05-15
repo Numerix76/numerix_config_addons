@@ -4,7 +4,7 @@ Escape made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Echap.Settings.VersionCustom = "1.0.2" --DON'T TOUCH THIS
+Echap.Settings.VersionCustom = "1.0.3" --DON'T TOUCH THIS
 
 --Change the language
 Echap.Settings.Language = "en"
@@ -24,9 +24,6 @@ Echap.Settings.URLServesTabs = "https://gmod-radio-numerix.mtxserv.com/escape_ap
 
 --Enable the compatibility with https://www.gmodstore.com/market/view/updatenotify-discord-inspired-update-notification-system ?
 Echap.Settings.UseUpdateNotify = false
-
---Show Quit button ?
-Echap.Settings.QuitButton = true
 
 --Change the actual news
 Echap.Settings.News =
@@ -138,6 +135,25 @@ Echap.Settings.Navigation =
         ColorText = Color( 255, 255, 255, 255 ),
         ColorImage = Color(255,255,255,255),
         ColorSelected = Color(47, 174, 79, 100),
+    },
+
+    {
+        Enabled = true,
+        Name = "QUIT",
+        Desc = "Quit the server",
+        DoLoadPanel = "Echap_Tab_Servers",
+        OnLoadInit = false,
+        Icon = "numerix_echap/disconnect.png",
+        NotDrawLine = false,
+        ColorLine = Color( 255, 255, 255, 100 ),
+        ColorBase = Color(33, 31, 35, 200),
+        ColorHover = Color( 0, 0, 0, 100 ),
+        ColorText = Color( 255, 255, 255, 255 ),
+        ColorImage = Color(255,255,255,255),
+        ColorSelected = Color(47, 174, 79, 100),
+        DoFunc = function()
+            RunConsoleCommand("disconnect")
+        end
     },
 }
 
