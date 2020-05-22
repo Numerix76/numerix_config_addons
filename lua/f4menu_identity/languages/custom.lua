@@ -4,9 +4,9 @@ F4Menu made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-F4Menu.Language.VersionCustom = "1.0.3" --DON'T TOUCH THIS
+F4Menu.Language.VersionCustom = "1.0.4" --DON'T TOUCH THIS
 
-F4Menu.Language["custom"] = {
+F4Menu.Language["default"] = {
 	["Quit"] = "Quit",
 	["Quit the server"] = "Quit the server",
 	["Nothing available !"] = "Nothing available !",
@@ -22,11 +22,16 @@ F4Menu.Language["custom"] = {
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
 	["A new version of the addon is available. Please download it."] = "A new version of the addon is available. Please download it.",
-	
+
 	--1.0.1
 	["Choose a model"] = "Choose a model",
-	
-	--1.0.2
 
+	--1.0.2
 	["Level"] = "Level",
+
+	--1.0.4
+	["Say"] = "Say",
+	["TEAM"] = "TEAM",
+	["*DEAD*"] = "*DEAD*",
+	["CONSOLE"] = "CONSOLE",
 }
