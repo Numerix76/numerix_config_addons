@@ -4,7 +4,7 @@ Escape made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Echap.Settings.VersionCustom = "1.0.3" --DON'T TOUCH THIS
+Echap.Settings.VersionCustom = "1.0.4" --DON'T TOUCH THIS
 
 --Change the language
 Echap.Settings.Language = "en"
@@ -33,6 +33,24 @@ Echap.Settings.News =
     content = "This is an example of the uptate system\n\nThis is a text whith 2 line break",
 }
 
+--Show the time of the message ?
+Echap.Settings.timeStamps = true
+
+--Show a tag behind the message (not on all) ?
+Echap.Settings.ChatTags = true
+
+--Tags to be show
+Echap.Settings.Tags = {
+    ["superadmin"] = {
+        name = "Superadmin",
+        color = Color(255,0,0,255),
+    },
+    ["admin"] = {
+        name = "Admin",
+        color = Color(0,255,0,255),
+    },
+}
+
 --[[ -----------------------------------------------------------------------------------------------
 
         Enabled             =>  Tab enable ?
@@ -47,7 +65,16 @@ Echap.Settings.News =
 
         DoLoadPanel         =>  TOUCH ONLY IF YOU KNOW WHAT YOU DO
 
-        OnLoadInit          =>  Open this tab on the opening of the menu ? (only one can be on true)
+        OnLoadInit          =>  Open this tab on the opening of the menu ? 
+                                (only one can be on true) (the first one will be show) (don't work if there is a DoFunc)
+
+        Icon                =>  Change the icon of a button (need to be a .png, white and 32x32 )
+
+        NotDrawLine         =>  Draw a line around the button ?
+        
+        Color...            =>  Change the color of an element of the button
+        
+        DoFunc              =>  Disallow the DoLoadPanel and run the function
 
 --------------------------------------------------------------------------------------------------]]
 
@@ -88,6 +115,21 @@ Echap.Settings.Navigation =
     },
     {
         Enabled = true,
+        Name = "CHAT",
+        Desc = "Discuss we people on the server.",
+        DoLoadPanel = "Echap_Tab_Chat",
+        OnLoadInit = false,
+        Icon = "numerix_echap/chat.png",
+        NotDrawLine = false,
+        ColorLine = Color( 255, 255, 255, 100 ),
+        ColorBase = Color(33, 31, 35, 200),
+        ColorHover = Color( 0, 0, 0, 100 ),
+        ColorText = Color( 255, 255, 255, 255 ),
+        ColorImage = Color(255,255,255,255),
+        ColorSelected = Color(47, 174, 79, 100),
+    },
+    {
+        Enabled = true,
         Name = "OPTIONS",
         Desc = "Adjust game settings.",
         DoLoadPanel = "Echap_Tab_Rules",
@@ -109,7 +151,7 @@ Echap.Settings.Navigation =
         Enabled = true,
         Name = "WEBSITE",
         Desc = "Access our site.",
-        WebsiteEnabled = true,
+        WebsiteEnabled = false,
         WebsiteURL = "https://google.com/",
         Icon = "numerix_echap/cursor.png",
         NotDrawLine = false,
@@ -120,7 +162,7 @@ Echap.Settings.Navigation =
         ColorImage = Color(255,255,255,255),
         ColorSelected = Color(47, 174, 79, 100),
     },
-    --Enable only if you have https://github.com/Tomelyr/Server-Hopping-Bunny
+
     {
         Enabled = true,
         Name = "SERVERS",
