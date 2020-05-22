@@ -4,7 +4,7 @@ F4Menu made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-F4Menu.Settings.VersionCustom = "1.0.3" --DON'T TOUCH THIS
+F4Menu.Settings.VersionCustom = "1.0.4" --DON'T TOUCH THIS
 
 --Change the language
 F4Menu.Settings.Language = "en"
@@ -25,6 +25,24 @@ F4Menu.Settings.ShowSlot = true
 --Show Model of job ?
 F4Menu.Settings.ShowModel = true
 
+--Show the time of the message ?
+F4Menu.Settings.timeStamps = true
+
+--Show a tag behind the message (not on all) ?
+F4Menu.Settings.ChatTags = true
+
+--Tags to be show
+F4Menu.Settings.Tags = {
+    ["superadmin"] = {
+        name = "Superadmin",
+        color = Color(255,0,0,255),
+    },
+    ["admin"] = {
+        name = "Admin",
+        color = Color(0,255,0,255),
+    },
+}
+
 --[[ -----------------------------------------------------------------------------------------------
 
         Enabled             =>  Tab enable ?
@@ -39,7 +57,16 @@ F4Menu.Settings.ShowModel = true
 
         DoLoadPanel         =>  TOUCH ONLY IF YOU KNOW WHAT YOU DO
 
-        OnLoadInit          =>  Open this tab on the opening of the menu ? (only one can be on true)
+        OnLoadInit          =>  Open this tab on the opening of the menu ? 
+                                (only one can be on true) (the first one will be show) (don't work if there is a DoFunc)
+
+        Icon                =>  Change the icon of a button (need to be a .png, white and 32x32 )
+
+        NotDrawLine         =>  Draw a line around the button ?
+        
+        Color...            =>  Change the color of an element of the button
+        
+        DoFunc              =>  Disallow the DoLoadPanel and run the function
 
 --------------------------------------------------------------------------------------------------]]
 
@@ -80,10 +107,25 @@ F4Menu.Settings.Navigation =
     },
     {
         Enabled = true,
+        Name = "CHAT",
+        Desc = "Discuss we people on the server.",
+        DoLoadPanel = "F4Menu_Tab_Chat",
+        OnLoadInit = false,
+        Icon = "numerix_f4menu/chat.png",
+        NotDrawLine = false,
+        ColorLine = Color( 255, 255, 255, 100 ),
+        ColorBase = Color(33, 31, 35, 200),
+        ColorHover = Color( 0, 0, 0, 100 ),
+        ColorText = Color( 255, 255, 255, 255 ),
+        ColorImage = Color(255,255,255,255),
+        ColorSelected = Color(47, 174, 79, 100),
+    },
+    {
+        Enabled = true,
         Name = "JOBS",
         Desc = "Choose a job.",
         DoLoadPanel = "F4Menu_Tab_Jobs",
-        OnLoadInit = true,
+        OnLoadInit = false,
         Icon = "numerix_f4menu/jobs.png",
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
