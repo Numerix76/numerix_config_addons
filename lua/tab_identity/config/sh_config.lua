@@ -19,7 +19,7 @@ TAB.Settings.ShowJobULX = "job+rank"
 TAB.Settings.ColorJob = false
 
 --Use the color of the team as a backgroud ? (Don't have ColorJob enable or the text will be invisible)
-TAB.Settings.UseColorTeamBG = true
+TAB.Settings.UseColorTeamBG = false
 
 --Possibility to click on a player and see more action (Only for DarkRP)
 TAB.Settings.PlayerTab = true
