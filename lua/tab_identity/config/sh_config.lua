@@ -4,7 +4,7 @@ TAB made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TAB.Settings.VersionCustom = "1.0.4" --DON'T TOUCH THIS
+TAB.Settings.VersionCustom = "1.0.5" --DON'T TOUCH THIS
 
 --Change the language
 TAB.Settings.Language = "en"
@@ -18,7 +18,10 @@ TAB.Settings.ShowJobULX = "job+rank"
 --Change the color of the name and the job or rank depending of the color of the job ?
 TAB.Settings.ColorJob = false
 
---Possibility to click on a player and see more action
+--Use the color of the team as a backgroud ? (Don't have ColorJob enable or the text will be invisible)
+TAB.Settings.UseColorTeamBG = true
+
+--Possibility to click on a player and see more action (Only for DarkRP)
 TAB.Settings.PlayerTab = true
 
 --Good ping
