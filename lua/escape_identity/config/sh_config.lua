@@ -4,7 +4,7 @@ Escape made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Echap.Settings.VersionCustom = "1.0.4" --DON'T TOUCH THIS
+Echap.Settings.VersionCustom = "1.0.5" --DON'T TOUCH THIS
 
 --Change the language
 Echap.Settings.Language = "en"
@@ -14,7 +14,10 @@ Echap.Settings.Language = "en"
 Echap.Settings.Logo = "https://mtxserv.com/forums/data/avatars/l/49/49891.jpg?1499247238"
 
 --Home text message
-Echap.Settings.TexteHome = "we wish you a good game on Your Server Name.\n\n\nIf you have a question or a problem make a message with the '///' to contact the administrator."
+Echap.Settings.TexteHome = [[we wish you a good game on Your Server Name.
+
+
+If you have a question or a problem make a message with the '///' to contact the administrator.]]
 
 --Size of the font of the Home text
 Echap.Settings.TexteSize = 30
@@ -30,7 +33,9 @@ Echap.Settings.News =
 {
     name = "Example",
     date = "30/12/2019",
-    content = "This is an example of the uptate system\n\nThis is a text whith 2 line break",
+    content = [[This is an example of the uptate system
+    
+This is a text whith 2 line break]],
 }
 
 --Show the time of the message ?
@@ -205,8 +210,9 @@ Echap.Settings.Server =
     {
         Enabled = true,
         Name = "Example",
-        Desc = "Example of description",
+        Desc = [[Example of description]],
         IP = "game-fr-40.mtxserv.com",
         Port = "27120",
+        Map = true,
     },
 }
