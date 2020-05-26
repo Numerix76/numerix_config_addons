@@ -4,7 +4,7 @@ Escape made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Echap.Language.VersionCustom = "1.0.2" --DON'T TOUCH THIS
+Echap.Language.VersionCustom = "1.0.3" --DON'T TOUCH THIS
 
 Echap.Language["custom"] = {
 	["Welcome"] = "Welcome",
@@ -21,6 +21,9 @@ Echap.Language["custom"] = {
 	["TEAM"] = "TEAM",
 	["*DEAD*"] = "*DEAD*",
 	["CONSOLE"] = "CONSOLE",
+	
+	--1.0.3
+	["Map"] = "Map",
 
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
