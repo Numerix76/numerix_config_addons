@@ -4,12 +4,9 @@ Escape made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Echap.Language.VersionCustom = "1.0.3" --DON'T TOUCH THIS
+Echap.Language.VersionCustom = "1.0.4" --DON'T TOUCH THIS
 
 Echap.Language["custom"] = {
-	["Welcome"] = "Welcome",
-	["Quit"] = "Quit",
-	["Quit the server"] = "Quit the server",
 	["No news available"] = "No news available",
 	["Loading"] = "Loading",
 	["Players"] = "Players",
