@@ -4,12 +4,9 @@ F4Menu made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-F4Menu.Language.VersionCustom = "1.0.4" --DON'T TOUCH THIS
+F4Menu.Language.VersionCustom = "1.0.5" --DON'T TOUCH THIS
 
 F4Menu.Language["default"] = {
-	["Quit"] = "Quit",
-	["Quit the server"] = "Quit the server",
-	["Nothing available !"] = "Nothing available !",
 	["Price"] = "Price",
 	["Buy"] = "Buy",
 	["Welcome"] = "Welcome",
