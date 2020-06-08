@@ -13,8 +13,10 @@ F4Menu.Settings.Language = "en"
 --Put "usesteamprofile" to set the Profile Steam Logo of the player
 F4Menu.Settings.Logo = "https://mtxserv.com/forums/data/avatars/l/49/49891.jpg?1499247238"
 
---Home text message
-F4Menu.Settings.TexteHome = "we wish you a good game on Your Server Name."
+--Home text message (%s = Name of player)
+F4Menu.Settings.TexteHome = [[Welcome, 
+
+%s we wish you a good game on Your Server Name.]]
 
 --Size of the font of the Home text
 F4Menu.Settings.TexteSize = 30
@@ -25,13 +27,13 @@ F4Menu.Settings.ShowSlot = true
 --Show Model of job ?
 F4Menu.Settings.ShowModel = true
 
---Show the time of the message ?
+--Show the time of the message ? (Chat)
 F4Menu.Settings.timeStamps = true
 
---Show a tag behind the message (not on all) ?
+--Show a tag behind the message (not on all) ? (Chat)
 F4Menu.Settings.ChatTags = true
 
---Tags to be show
+--Tags to be show (Chat)
 F4Menu.Settings.Tags = {
     ["superadmin"] = {
         name = "Superadmin",
