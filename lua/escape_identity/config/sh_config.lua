@@ -4,7 +4,7 @@ Escape made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Echap.Settings.VersionCustom = "1.0.5" --DON'T TOUCH THIS
+Echap.Settings.VersionCustom = "1.0.6" --DON'T TOUCH THIS
 
 --Change the language
 Echap.Settings.Language = "en"
@@ -13,8 +13,9 @@ Echap.Settings.Language = "en"
 --Put "usesteamprofile" to set the Profile Steam Logo of the player
 Echap.Settings.Logo = "https://mtxserv.com/forums/data/avatars/l/49/49891.jpg?1499247238"
 
---Home text message
-Echap.Settings.TexteHome = [[we wish you a good game on Your Server Name.
+--Home text message (%s = Name of player)
+Echap.Settings.TexteHome = [[Welcome,
+%s we wish you a good game on Your Server Name.
 
 
 If you have a question or a problem make a message with the '///' to contact the administrator.]]
@@ -38,13 +39,13 @@ Echap.Settings.News =
 This is a text whith 2 line break]],
 }
 
---Show the time of the message ?
+--Show the time of the message ? (Chat)
 Echap.Settings.timeStamps = true
 
---Show a tag behind the message (not on all) ?
+--Show a tag behind the message (not on all) ? (Chat)
 Echap.Settings.ChatTags = true
 
---Tags to be show
+--Tags to be show (Chat)
 Echap.Settings.Tags = {
     ["superadmin"] = {
         name = "Superadmin",
