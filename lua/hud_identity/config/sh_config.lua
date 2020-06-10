@@ -90,7 +90,7 @@ HUD.Settings.ElementRightTop = {
         bar = false,
         drawinfo = function(value) return DarkRP.formatMoney(value) end,
         sortOrder = 10,
-        animspeed = 100000000,
+        animspeed = 1000,
     },
 }
 
