@@ -94,16 +94,16 @@ if CLIENT then --DON'T TOUCH THIS
 			DoFunc				=>  Action to execute
 
 			Space				=>  Make a space ? example : 	{
-																	Name = "",
-																	ColorLine = Color(255,255,255,255),
-																	ColorText = Color(255,255,255,255),
-																	DrawLineUp = true,
-																	DrawLineDown = true,
-																	Visibility = function(ply) 
-																		return true
-																	end,
-																	Space = true,   
-																}, 
+												Name = "",
+												ColorLine = Color(255,255,255,255),
+												ColorText = Color(255,255,255,255),
+												DrawLineUp = true,
+												DrawLineDown = true,
+												Visibility = function(ply) 
+													return true
+												end,
+												Space = true,   
+											}, 
 
 	--------------------------------------------------------------------------------------------------]]
 	ContextMenuIdentity.Settings.Button =
