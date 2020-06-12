@@ -4,7 +4,7 @@ Escape made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Echap.Settings.VersionCustom = "1.0.6" --DON'T TOUCH THIS
+Echap.Settings.VersionCustom = "1.0.7" --DON'T TOUCH THIS
 
 --Change the language
 Echap.Settings.Language = "en"
@@ -12,6 +12,10 @@ Echap.Settings.Language = "en"
 --Logo of your server (can be from the game or an url). To have a good result please use a square logo
 --Put "usesteamprofile" to set the Profile Steam Logo of the player
 Echap.Settings.Logo = "https://mtxserv.com/forums/data/avatars/l/49/49891.jpg?1499247238"
+
+--Background of the menu (can be from the game or an url).  To have a good result please use a 1920x1080.
+--Keep empty to disable
+Echap.Settings.Background = ""
 
 --Home text message (%s = Name of player)
 Echap.Settings.TexteHome = [[Welcome,
