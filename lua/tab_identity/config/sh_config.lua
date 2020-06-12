@@ -4,7 +4,7 @@ TAB made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TAB.Settings.VersionCustom = "1.0.5" --DON'T TOUCH THIS
+TAB.Settings.VersionCustom = "1.0.6" --DON'T TOUCH THIS
 
 --Change the language
 TAB.Settings.Language = "en"
@@ -14,6 +14,9 @@ TAB.Settings.Language = "en"
 --Put "rank" to show ONLY the rank of the player
 --Put "job+rank" to show the job and the rank of the player
 TAB.Settings.ShowJobULX = "job+rank"
+
+--Same as above but only for member of TAB.Settings.Staff. If empty the config above will have the priority
+TAB.Settings.ShowJobULXAdmin = "job+rank"
 
 --Change the color of the name and the job or rank depending of the color of the job ?
 TAB.Settings.ColorJob = false
@@ -91,7 +94,7 @@ if CLIENT then --DON'T TOUCH THIS
                 TAB.OpenBanDialog(selected:Name()) 
             end,
             visible = function(ply) 
-                return TAB.Settings.Staff[ply:GetNWString("usergroup")] 
+                return ulx and ply:query("ulx ban")
             end,
         },
         {
@@ -103,7 +106,7 @@ if CLIENT then --DON'T TOUCH THIS
                 TAB.OpenKickDialog(selected:Name()) 
             end,
             visible = function(ply) 
-                return TAB.Settings.Staff[ply:GetNWString("usergroup")] 
+                return ulx and ply:query("ulx kick")
             end,
         },
         {
@@ -112,10 +115,10 @@ if CLIENT then --DON'T TOUCH THIS
                 return "numerix_tab/teleport.png"
             end,
             func = function(ply, selected) 
-                ply:ConCommand('ulx teleport "'..selected:Name()..'"') 
+                RunConsoleCommand("ulx", "teleport", selected:Name()) 
             end,
             visible = function(ply) 
-                return TAB.Settings.Staff[ply:GetNWString("usergroup")] 
+                return ulx and ply:query("ulx teleport")
             end,
         },
         {
@@ -124,10 +127,10 @@ if CLIENT then --DON'T TOUCH THIS
                 return "numerix_tab/goto.png"
             end,
             func = function(ply, selected) 
-                ply:ConCommand('ulx goto "'..selected:Name()..'"') 
+                RunConsoleCommand("ulx", "goto", selected:Name()) 
             end,
             visible = function(ply) 
-                return TAB.Settings.Staff[ply:GetNWString("usergroup")] 
+                return ulx and ply:query("ulx goto")
             end,
         },
         {
@@ -136,10 +139,10 @@ if CLIENT then --DON'T TOUCH THIS
                 return "numerix_tab/return.png"
             end,
             func = function(ply, selected) 
-                ply:ConCommand('ulx return "'..selected:Name()..'"') 
+                RunConsoleCommand("ulx", "return", selected:Name()) 
             end,
             visible = function(ply) 
-                return TAB.Settings.Staff[ply:GetNWString("usergroup")]
+                return ulx and ply:query("ulx return")
             end,
         },
         {
@@ -148,7 +151,7 @@ if CLIENT then --DON'T TOUCH THIS
                 return "numerix_tab/spectate.png"
             end,
             func = function(ply, selected) 
-                ply:ConCommand('FSpectate "'..selected:Name()..'"') 
+                RunConsoleCommand("FSpectate", selected:UserID()) 
             end,
             visible = function(ply) 
                 return DarkRP and !DarkRP.disabledDefaults["modules"]["fadmin"] and FAdmin.Access.PlayerHasPrivilege(ply, "Spectate")
@@ -165,13 +168,13 @@ if CLIENT then --DON'T TOUCH THIS
             end,
             func = function(ply, selected) 
                 if selected:IsFrozen() then
-                    ply:ConCommand('ulx unfreeze "'..selected:Name()..'"') 
+                    RunConsoleCommand("ulx", "unfreeze", selected:Name()) 
                 else
-                    ply:ConCommand('ulx freeze "'..selected:Name()..'"') 
+                    RunConsoleCommand("ulx", "freeze", selected:Name()) 
                 end 
             end,
             visible = function(ply) 
-                return TAB.Settings.Staff[ply:GetNWString("usergroup")] 
+                return ulx and ply:query("ulx freeze") and ply:query("ulx unfreeze")
             end,
         },
         {
@@ -197,9 +200,9 @@ if CLIENT then --DON'T TOUCH THIS
             end,
             func = function(ply, selected) 
                 if selected:FAdmin_GetGlobal("FADmin_DisableNoclip") then
-                    ply:ConCommand('_FAdmin SetNoclip "'..selected:Name()..'" 1')
+                    RunConsoleCommand("_FAdmin", "SetNoclip", selected:UserID(), "1")
                 else
-                    ply:ConCommand('_FAdmin SetNoclip "'..selected:Name()..'" 0')
+                    RunConsoleCommand("_FAdmin", "SetNoclip", selected:UserID(), "0")
                 end 
             end,
             visible = function(ply) 
@@ -217,9 +220,9 @@ if CLIENT then --DON'T TOUCH THIS
             end,
             func = function(ply, selected) 
                 if not selected:FAdmin_GetGlobal("FAdmin_cloaked") then
-                    ply:ConCommand('_FAdmin Cloak "'..selected:Name()..'"')
+                    RunConsoleCommand("_FAdmin", "Cloak", selected:UserID())
                 else
-                    ply:ConCommand('_FAdmin Uncloak "'..selected:Name()..'"')
+                    RunConsoleCommand("_FAdmin", "Uncloak", selected:UserID())
                 end
             end,
             visible = function(ply) 
