@@ -4,7 +4,7 @@ Escape made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Echap.Settings.VersionCustom = "1.0.7" --DON'T TOUCH THIS
+Echap.Settings.VersionCustom = "1.0.8" --DON'T TOUCH THIS
 
 --Change the language
 Echap.Settings.Language = "en"
@@ -80,6 +80,8 @@ Echap.Settings.Tags = {
 
         Icon                =>  Change the icon of a button (need to be a .png, white and 32x32 )
 
+        Visible             =>  Return if the button can be see for the player
+
         NotDrawLine         =>  Draw a line around the button ?
         
         Color...            =>  Change the color of an element of the button
@@ -97,6 +99,7 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Home",
         OnLoadInit = false,
         Icon = "numerix_echap/play-button.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -115,6 +118,7 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_News",
         OnLoadInit = false,
         Icon = "numerix_echap/newspaper.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -130,6 +134,7 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Chat",
         OnLoadInit = false,
         Icon = "numerix_echap/chat.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -145,6 +150,7 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Rules",
         OnLoadInit = false,
         Icon = "numerix_echap/settings.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -164,6 +170,7 @@ Echap.Settings.Navigation =
         WebsiteEnabled = true,
         WebsiteURL = "https://google.com/",
         Icon = "numerix_echap/cursor.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -180,6 +187,7 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Servers",
         OnLoadInit = false,
         Icon = "numerix_echap/server.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -196,6 +204,7 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Servers",
         OnLoadInit = false,
         Icon = "numerix_echap/disconnect.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -219,5 +228,5 @@ Echap.Settings.Server =
         IP = "game-fr-40.mtxserv.com",
         Port = "27120",
         Map = true,
-    },
+    },   
 }
