@@ -4,7 +4,7 @@ F4Menu made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-F4Menu.Settings.VersionCustom = "1.0.6" --DON'T TOUCH THIS
+F4Menu.Settings.VersionCustom = "1.0.7" --DON'T TOUCH THIS
 
 --Change the language
 F4Menu.Settings.Language = "en"
@@ -68,6 +68,8 @@ F4Menu.Settings.Tags = {
 
         Icon                =>  Change the icon of a button (need to be a .png, white and 32x32 )
 
+        Visible             =>  Return if the button can be see for the player
+
         NotDrawLine         =>  Draw a line around the button ?
         
         Color...            =>  Change the color of an element of the button
@@ -85,6 +87,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Home",
         OnLoadInit = false,
         Icon = "numerix_f4menu/play-button.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -103,6 +106,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Commands",
         OnLoadInit = false,
         Icon = "numerix_f4menu/commandes.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -118,6 +122,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Chat",
         OnLoadInit = false,
         Icon = "numerix_f4menu/chat.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -133,6 +138,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Jobs",
         OnLoadInit = false,
         Icon = "numerix_f4menu/jobs.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -148,6 +154,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Entities",
         OnLoadInit = false,
         Icon = "numerix_f4menu/entities.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -163,6 +170,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Weapons",
         OnLoadInit = false,
         Icon = "numerix_f4menu/weapons.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -178,6 +186,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Shipments",
         OnLoadInit = false,
         Icon = "numerix_f4menu/shipments.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -193,6 +202,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Ammo",
         OnLoadInit = false,
         Icon = "numerix_f4menu/ammo.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -208,6 +218,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Food",
         OnLoadInit = false,
         Icon = "numerix_f4menu/food.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -224,6 +235,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Servers",
         OnLoadInit = false,
         Icon = "numerix_echap/disconnect.png",
+        Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
