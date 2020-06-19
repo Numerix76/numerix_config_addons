@@ -4,7 +4,7 @@ HUD Identity made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-HUD.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
+HUD.Settings.VersionCustom = "1.0.2" --DON'T TOUCH THIS
 
 --Change the language
 HUD.Settings.Language = "en"
@@ -36,11 +36,29 @@ HUD.Settings.IconVoiceHUD = false
 --Disable who can ear you HUD ?
 HUD.Settings.ChatReceiverHUD = false
 
--- Position of the agenda Available : "LeftBottom", "LeftTop", "RightBottom", "RightTop"
+--Disable the Door HUD ?
+HUD.Settings.DoorHUD = false
+
+--Disable the Door State HUD ? (Close/Open)
+HUD.Settings.DoorStateHUD = false
+
+--Disable the default DarkRP Door HUD ?
+HUD.Settings.DefaultDoorHUD = true
+
+--Disable the Death HUD ?
+HUD.Settings.DeathHUD = false
+
+--Position of the agenda Available : "LeftBottom", "LeftTop", "RightBottom", "RightTop"
 HUD.Settings.AgendaPos = "LeftTop"
 
 --At which HP the player have trouble of vision ? (-1 to desactivate)
 HUD.Settings.LowHealth = 10
+
+--Icon when the door you own and look is unlock 
+HUD.Settings.DoorUnLockIcon = Material("numerix_hud/unlock.png")
+
+--Icon when the door you own and look is lock 
+HUD.Settings.DoorLockIcon = Material("numerix_hud/lock.png")
 
 --[[ -----------------------------------------------------------------------------------------------
 
@@ -319,3 +337,35 @@ HUD.Settings.AbovePlayerInfoLeft = {
         priority = 999999,
     },   
 }
+
+--          Notification Popup settings
+
+--Color for the title of the popup for the admintell
+HUD.Settings.ColorTitleAdminTell = Color(248, 78, 27)
+
+--Color for the message of the popup for the admintell
+HUD.Settings.ColorMessageAdminTell = Color(255,255,255)
+
+--Color for the title of the popup for the warning battery
+HUD.Settings.ColorTitleWarningBattery = Color(248, 78, 27)
+
+--Color for the message of the popup for the warning battery
+HUD.Settings.ColorMessageWarningBattery = Color(255,255,255)
+
+--Color for the title of the popup for the warrant
+HUD.Settings.ColorTitleWarrant = Color(27, 184, 197)
+
+--Color for the message of the popup for the warrant
+HUD.Settings.ColorMessageWarrant = Color(255,255,255)
+
+--Color for the title of the popup for the wanted
+HUD.Settings.ColorTitleWanted = Color(27, 184, 197)
+
+--Color for the message of the popup for the wanted
+HUD.Settings.ColorMessageWanted = Color(255,255,255)
+
+--Color for the title of the popup for the unwanted
+HUD.Settings.ColorTitleUnWanted = Color(27, 184, 197)
+
+--Color for the message of the popup for the unwanted
+HUD.Settings.ColorMessageUnWanted = Color(255,255,255)
