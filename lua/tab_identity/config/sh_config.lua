@@ -4,7 +4,7 @@ TAB made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TAB.Settings.VersionCustom = "1.0.6" --DON'T TOUCH THIS
+TAB.Settings.VersionCustom = "1.0.7" --DON'T TOUCH THIS
 
 --Change the language
 TAB.Settings.Language = "en"
@@ -45,6 +45,10 @@ TAB.Settings.RankName = {
     ["admin"] = "Admin",
     ["user"] = "User",
 }
+
+--Background of the menu (can be from the game or an url). To have a good result please use a 1920x1080.
+--Keep empty to disable
+TAB.Settings.Background = ""
 
 if CLIENT then --DON'T TOUCH THIS
 
