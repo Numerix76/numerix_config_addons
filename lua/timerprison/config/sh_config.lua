@@ -4,7 +4,7 @@ Timer Prison made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TimerPrison.Settings.VersionCustom = "1.0.4" --DON'T TOUCH THIS
+TimerPrison.Settings.VersionCustom = "1.0.5" --DON'T TOUCH THIS
 
 --Change the language
 TimerPrison.Settings.Language = "en"
@@ -35,7 +35,7 @@ TimerPrison.Settings.MakeWhitelist = false
 
 -- TEAM which can see the HUD
 timer.Simple(1, function() --DON'T TOUCH THIS
-    if !DarkrRP then return end --DON'T TOUCH THIS    
+    if !DarkRP then return end --DON'T TOUCH THIS    
         
     TimerPrison.Settings.WhitelistTeam = {
         [TEAM_CITIZEN] = true,
