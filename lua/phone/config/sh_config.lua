@@ -4,10 +4,13 @@ Phone made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Phone.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
+Phone.Settings.VersionCustom = "1.0.2" --DON'T TOUCH THIS
 
 --Change the language
 Phone.Settings.Language = "en"
+
+--Send message in the chat ? (if false draw it at the top of the screen)
+Phone.Settings.MessageChat = true
 
 --Change the model of the phone
 Phone.Settings.Model = "models/props_trainstation/payphone001a.mdl"
