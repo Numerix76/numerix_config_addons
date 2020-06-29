@@ -4,10 +4,13 @@ Timer Prison made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TimerPrison.Settings.VersionCustom = "1.0.5" --DON'T TOUCH THIS
+TimerPrison.Settings.VersionCustom = "1.0.6" --DON'T TOUCH THIS
 
 --Change the language
 TimerPrison.Settings.Language = "en"
+
+--Show the HUD ? (useful if you want to integrate it into an other HUD)
+TimerPrison.Settings.ShowHUD = true
 
 --Sound play on change task
 TimerPrison.Settings.SoundFile = "ambient/alarms/klaxon1.wav"
