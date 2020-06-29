@@ -4,7 +4,7 @@ Phone made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Phone.Settings.VersionCustom = "1.0.2" --DON'T TOUCH THIS
+Phone.Settings.VersionCustom = "1.0.3" --DON'T TOUCH THIS
 
 --Change the language
 Phone.Settings.Language = "en"
@@ -17,6 +17,9 @@ Phone.Settings.Model = "models/props_trainstation/payphone001a.mdl"
 
 --Draw a 3D text above the phone ?
 Phone.Settings.ShowName3D = true
+
+--The price of the message depend on the lenght of it ? (Each price will be multiplicate by the number of letter it the message)
+Phone.Settings.PriceDependLenght = false
 
 --Price of the ad
 Phone.Settings.AdvertPrice = 75
