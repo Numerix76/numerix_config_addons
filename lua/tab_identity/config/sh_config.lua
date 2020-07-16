@@ -4,7 +4,7 @@ TAB made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TAB.Settings.VersionCustom = "1.0.7" --DON'T TOUCH THIS
+TAB.Settings.VersionCustom = "1.0.8" --DON'T TOUCH THIS
 
 --Change the language
 TAB.Settings.Language = "en"
@@ -39,16 +39,16 @@ TAB.Settings.Staff = {
     ["admin"] = true,
 }
 
+--Background of the menu (can be from the game or an url). To have a good result please use a 1920x1080.
+--Keep empty to disable
+TAB.Settings.Background = ""
+
 --Change the name of a rank to be show (if a rank is not present here the script will show the basic name)
 TAB.Settings.RankName = {
     ["superadmin"] = "Superadmin",
     ["admin"] = "Admin",
     ["user"] = "User",
 }
-
---Background of the menu (can be from the game or an url). To have a good result please use a 1920x1080.
---Keep empty to disable
-TAB.Settings.Background = ""
 
 if CLIENT then --DON'T TOUCH THIS
 
@@ -95,7 +95,7 @@ if CLIENT then --DON'T TOUCH THIS
                 return "numerix_tab/ban.png"
             end,
             func = function(ply, selected) 
-                TAB.OpenBanDialog(selected:Name()) 
+                TAB.OpenBanDialog(selected:UserID()) 
             end,
             visible = function(ply) 
                 return ulx and ply:query("ulx ban")
@@ -187,7 +187,7 @@ if CLIENT then --DON'T TOUCH THIS
                 return "numerix_tab/setteam.png"
             end,
             func = function(ply, selected) 
-                TAB.OpenSetTeam(selected:Name())
+                TAB.OpenSetTeam(selected:UserID())
             end,
             visible = function(ply) 
                 return DarkRP and !DarkRP.disabledDefaults["modules"]["fadmin"] and FAdmin.Access.PlayerHasPrivilege(ply, "SetTeam")
