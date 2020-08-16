@@ -4,7 +4,7 @@ F4Menu made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-F4Menu.Language.VersionCustom = "1.0.5" --DON'T TOUCH THIS
+F4Menu.Language.VersionCustom = "1.0.6" --DON'T TOUCH THIS
 
 F4Menu.Language["default"] = {
 	["Price"] = "Price",
@@ -31,4 +31,7 @@ F4Menu.Language["default"] = {
 	["TEAM"] = "TEAM",
 	["*DEAD*"] = "*DEAD*",
 	["CONSOLE"] = "CONSOLE",
+	
+	--1.0.6
+	["Nothing available !"] = "Nothing available !",
 }
