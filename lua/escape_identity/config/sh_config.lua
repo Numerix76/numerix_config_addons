@@ -4,7 +4,7 @@ Escape made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Echap.Settings.VersionCustom = "1.0.8" --DON'T TOUCH THIS
+Echap.Settings.VersionCustom = "1.0.9" --DON'T TOUCH THIS
 
 --Change the language
 Echap.Settings.Language = "en"
@@ -13,9 +13,19 @@ Echap.Settings.Language = "en"
 --Put "usesteamprofile" to set the Profile Steam Logo of the player
 Echap.Settings.Logo = "https://mtxserv.com/forums/data/avatars/l/49/49891.jpg?1499247238"
 
+--Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
+Echap.Settings.LogoName = "your_server_name/logo1.png"
+
 --Background of the menu (can be from the game or an url).  To have a good result please use a 1920x1080.
+--Put blur to have blur or color to choose a color
 --Keep empty to disable
 Echap.Settings.Background = ""
+
+--Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
+Echap.Settings.BackgroundName = "your_server_name/backgroup1.png"
+
+--Only work if Echap.Settings.Background = "color"
+Echap.Settings.BackgroundColor = Color(0,0,0,255)
 
 --Home text message (%s = Name of player)
 Echap.Settings.TexteHome = [[Welcome,
@@ -78,7 +88,9 @@ Echap.Settings.Tags = {
         OnLoadInit          =>  Open this tab on the opening of the menu ? 
                                 (only one can be on true) (the first one will be show) (don't work if there is a DoFunc)
 
-        Icon                =>  Change the icon of a button (need to be a .png, white and 32x32 )
+        Icon                =>  Change the icon of a button (can be a url or game file)
+
+        IconName            =>  Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
 
         Visible             =>  Return if the button can be see for the player
 
@@ -99,6 +111,7 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Home",
         OnLoadInit = false,
         Icon = "numerix_echap/play-button.png",
+        IconName = "your_server_name/icon1.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -118,6 +131,7 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_News",
         OnLoadInit = false,
         Icon = "numerix_echap/newspaper.png",
+        IconName = "your_server_name/icon2.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -134,6 +148,7 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Chat",
         OnLoadInit = false,
         Icon = "numerix_echap/chat.png",
+        IconName = "your_server_name/icon3.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -150,6 +165,7 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Rules",
         OnLoadInit = false,
         Icon = "numerix_echap/settings.png",
+        IconName = "your_server_name/icon4.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -170,6 +186,7 @@ Echap.Settings.Navigation =
         WebsiteEnabled = true,
         WebsiteURL = "https://google.com/",
         Icon = "numerix_echap/cursor.png",
+        IconName = "your_server_name/icon5.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -187,6 +204,7 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Servers",
         OnLoadInit = false,
         Icon = "numerix_echap/server.png",
+        IconName = "your_server_name/icon6.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -204,6 +222,7 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Servers",
         OnLoadInit = false,
         Icon = "numerix_echap/disconnect.png",
+        IconName = "your_server_name/icon7.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
