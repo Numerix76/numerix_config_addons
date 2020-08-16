@@ -4,7 +4,7 @@ F4Menu made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-F4Menu.Settings.VersionCustom = "1.0.7" --DON'T TOUCH THIS
+F4Menu.Settings.VersionCustom = "1.0.8" --DON'T TOUCH THIS
 
 --Change the language
 F4Menu.Settings.Language = "en"
@@ -13,9 +13,19 @@ F4Menu.Settings.Language = "en"
 --Put "usesteamprofile" to set the Profile Steam Logo of the player
 F4Menu.Settings.Logo = "https://mtxserv.com/forums/data/avatars/l/49/49891.jpg?1499247238"
 
+--Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
+F4Menu.Settings.LogoName = "your_server_name/logo1.png"
+
 --Background of the menu (can be from the game or an url).  To have a good result please use a 1920x1080.
+--Put blur to have blur or color to choose a color
 --Keep empty to disable
-F4Menu.Settings.Background = ""
+F4Menu.Settings.Background = "blur"
+
+--Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
+F4Menu.Settings.BackgroundName = "your_server_name/backgroup1.png"
+
+--Only work if F4Menu.Settings.Background = "color"
+F4Menu.Settings.BackgroundColor = Color(0,0,0,255)
 
 --Home text message (%s = Name of player)
 F4Menu.Settings.TexteHome = [[Welcome, 
@@ -68,6 +78,8 @@ F4Menu.Settings.Tags = {
 
         Icon                =>  Change the icon of a button (need to be a .png, white and 32x32 )
 
+        IconName            =>  Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
+
         Visible             =>  Return if the button can be see for the player
 
         NotDrawLine         =>  Draw a line around the button ?
@@ -87,6 +99,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Home",
         OnLoadInit = false,
         Icon = "numerix_f4menu/play-button.png",
+        IconName = "your_server_name/icon1.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -106,6 +119,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Commands",
         OnLoadInit = false,
         Icon = "numerix_f4menu/commandes.png",
+        IconName = "your_server_name/icon2.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -122,6 +136,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Chat",
         OnLoadInit = false,
         Icon = "numerix_f4menu/chat.png",
+        IconName = "your_server_name/icon3.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -138,6 +153,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Jobs",
         OnLoadInit = false,
         Icon = "numerix_f4menu/jobs.png",
+        IconName = "your_server_name/icon4.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -154,6 +170,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Entities",
         OnLoadInit = false,
         Icon = "numerix_f4menu/entities.png",
+        IconName = "your_server_name/icon5.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -170,6 +187,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Weapons",
         OnLoadInit = false,
         Icon = "numerix_f4menu/weapons.png",
+        IconName = "your_server_name/icon6.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -186,6 +204,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Shipments",
         OnLoadInit = false,
         Icon = "numerix_f4menu/shipments.png",
+        IconName = "your_server_name/icon7.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -202,6 +221,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Ammo",
         OnLoadInit = false,
         Icon = "numerix_f4menu/ammo.png",
+        IconName = "your_server_name/icon8.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -218,6 +238,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "F4Menu_Tab_Food",
         OnLoadInit = false,
         Icon = "numerix_f4menu/food.png",
+        IconName = "your_server_name/icon9.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -235,6 +256,7 @@ F4Menu.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Servers",
         OnLoadInit = false,
         Icon = "numerix_echap/disconnect.png",
+        IconName = "your_server_name/icon10.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
