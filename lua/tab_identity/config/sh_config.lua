@@ -4,7 +4,7 @@ TAB made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-TAB.Settings.VersionCustom = "1.0.8" --DON'T TOUCH THIS
+TAB.Settings.VersionCustom = "1.0.9" --DON'T TOUCH THIS
 
 --Change the language
 TAB.Settings.Language = "en"
@@ -39,9 +39,19 @@ TAB.Settings.Staff = {
     ["admin"] = true,
 }
 
---Background of the menu (can be from the game or an url). To have a good result please use a 1920x1080.
+--Background of the menu (can be from the game or an url).  To have a good result please use a 1920x1080.
+--Put blur to have blur or color to choose a color
 --Keep empty to disable
-TAB.Settings.Background = ""
+TAB.Settings.Background = "blur"
+
+--Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
+TAB.Settings.BackgroundName = "your_server_name/backgroud1.png"
+
+--Only work if Echap.Settings.Background = "color"
+TAB.Settings.BackgroundColor = Color(0,0,0,255)
+
+--Hide all HUD when the TAB is open ?
+TAB.Settings.HideHUD = true
 
 --Change the name of a rank to be show (if a rank is not present here the script will show the basic name)
 TAB.Settings.RankName = {
@@ -55,14 +65,16 @@ if CLIENT then --DON'T TOUCH THIS
     --Action available on players
     --Some of them use the Fadmin command use on DarkRP so you have to change command to an available and remove 
     --"DarkRP and !DarkRP.disabledDefaults["modules"]["fadmin"] and" in visible
+
+    --Please be sure to change the name of (for example) 'your_server_name/icon1.png' at the first config and when you update the config if you use a web image. (don't remove the .png)
     TAB.Settings.ActionPlayer = {
         {
             text = "Mute/UnMute",
             icon = function(ply, selected) 
                 if selected:IsMuted() then
-                    return "numerix_tab/mute.png" 
+                    return "numerix_tab/mute.png", "your_server_name/icon1.png" 
                 else
-                    return "numerix_tab/unmute.png"
+                    return "numerix_tab/unmute.png", "your_server_name/icon2.png" 
                 end 
             end,
             func = function(ply, selected) 
@@ -79,7 +91,7 @@ if CLIENT then --DON'T TOUCH THIS
         {
             text = "Copy SteamID",
             icon = function(ply, selected) 
-                return "numerix_tab/steam.png" 
+                return "numerix_tab/steam.png", "your_server_name/icon3.png" 
             end,
             func = function(ply, selected) 
                 SetClipboardText(selected:SteamID()) 
@@ -92,7 +104,7 @@ if CLIENT then --DON'T TOUCH THIS
         {
             text = "Ban",
             icon = function(ply, selected) 
-                return "numerix_tab/ban.png"
+                return "numerix_tab/ban.png", "your_server_name/icon4.png" 
             end,
             func = function(ply, selected) 
                 TAB.OpenBanDialog(selected:UserID()) 
@@ -104,7 +116,7 @@ if CLIENT then --DON'T TOUCH THIS
         {
             text = "Kick",
             icon = function(ply, selected) 
-                return "numerix_tab/kick.png"
+                return "numerix_tab/kick.png", "your_server_name/icon5.png" 
             end,
             func = function(ply, selected) 
                 TAB.OpenKickDialog(selected:Name()) 
@@ -116,7 +128,7 @@ if CLIENT then --DON'T TOUCH THIS
         {
             text = "Teleport",
             icon = function(ply, selected) 
-                return "numerix_tab/teleport.png"
+                return "numerix_tab/teleport.png", "your_server_name/icon6.png" 
             end,
             func = function(ply, selected) 
                 RunConsoleCommand("ulx", "teleport", selected:Name()) 
@@ -128,7 +140,7 @@ if CLIENT then --DON'T TOUCH THIS
         {
             text = "Goto",
             icon = function(ply, selected) 
-                return "numerix_tab/goto.png"
+                return "numerix_tab/goto.png", "your_server_name/icon7.png" 
             end,
             func = function(ply, selected) 
                 RunConsoleCommand("ulx", "goto", selected:Name()) 
@@ -140,7 +152,7 @@ if CLIENT then --DON'T TOUCH THIS
         {
             text = "Return",
             icon = function(ply, selected) 
-                return "numerix_tab/return.png"
+                return "numerix_tab/return.png", "your_server_name/icon8.png" 
             end,
             func = function(ply, selected) 
                 RunConsoleCommand("ulx", "return", selected:Name()) 
@@ -152,7 +164,7 @@ if CLIENT then --DON'T TOUCH THIS
         {
             text = "Spectate",
             icon = function(ply, selected) 
-                return "numerix_tab/spectate.png"
+                return "numerix_tab/spectate.png", "your_server_name/icon9.png" 
             end,
             func = function(ply, selected) 
                 RunConsoleCommand("FSpectate", selected:UserID()) 
@@ -165,9 +177,9 @@ if CLIENT then --DON'T TOUCH THIS
             text = "Freeze/Unfreeze",
             icon = function(ply, selected) 
                 if selected:IsFrozen() then
-                    return "numerix_tab/freeze.png"
+                    return "numerix_tab/freeze.png", "your_server_name/icon10.png" 
                 else
-                    return "numerix_tab/unfreeze.png"
+                    return "numerix_tab/unfreeze.png", "your_server_name/icon11.png" 
                 end 
             end,
             func = function(ply, selected) 
@@ -184,7 +196,7 @@ if CLIENT then --DON'T TOUCH THIS
         {
             text = "SetTeam",
             icon = function(ply, selected) 
-                return "numerix_tab/setteam.png"
+                return "numerix_tab/setteam.png", "your_server_name/icon12.png" 
             end,
             func = function(ply, selected) 
                 TAB.OpenSetTeam(selected:UserID())
@@ -197,9 +209,9 @@ if CLIENT then --DON'T TOUCH THIS
             text = "NoClip",
             icon = function(ply, selected) 
                 if selected:FAdmin_GetGlobal("FADmin_DisableNoclip") then 
-                    return "numerix_tab/noclipoff.png"
+                    return "numerix_tab/noclipoff.png", "your_server_name/icon13.png" 
                 else
-                    return "numerix_tab/noclipon.png"
+                    return "numerix_tab/noclipon.png", "your_server_name/icon14.png" 
                 end
             end,
             func = function(ply, selected) 
@@ -217,9 +229,9 @@ if CLIENT then --DON'T TOUCH THIS
             text = "Cloack",
             icon = function(ply, selected) 
                 if not selected:FAdmin_GetGlobal("FAdmin_cloaked") then
-                    return "numerix_tab/cloackoff.png"
+                    return "numerix_tab/cloackoff.png", "your_server_name/icon15.png" 
                 else
-                    return "numerix_tab/cloackon.png"
+                    return "numerix_tab/cloackon.png", "your_server_name/icon16.png" 
                 end
             end,
             func = function(ply, selected) 
