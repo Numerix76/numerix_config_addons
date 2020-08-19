@@ -4,7 +4,7 @@ ContextMenu Identity made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-ContextMenuIdentity.Settings.VersionDefault = "1.0.2" --DON'T TOUCH THIS
+ContextMenuIdentity.Settings.VersionDefault = "1.0.4" --DON'T TOUCH THIS
 
 --Change the language
 ContextMenuIdentity.Settings.Language = "en"
