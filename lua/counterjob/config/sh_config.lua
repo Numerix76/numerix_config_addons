@@ -4,7 +4,7 @@ Counter Job made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-CounterJob.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
+CounterJob.Settings.VersionCustom = "1.0.2" --DON'T TOUCH THIS
 
 --Change the language
 CounterJob.Settings.Language = "en"
@@ -24,10 +24,10 @@ if CLIENT then --DON'T TOUCH THIS
     CounterJob.Settings.TextColor = Color(255,255,255,180) 
 
     --Position of the text on the screen length
-    CounterJob.Settings.PosX = ScrW()/2 
+    CounterJob.Settings.PosX = function() return ScrW()/2 end
 
     --Position of the text on the height of the screen
-    CounterJob.Settings.PosY = ScrH() 
+    CounterJob.Settings.PosY = function() return ScrH() end
 
     --How to align the text along the length of the screen? (Available : https://wiki.garrysmod.com/page/Enums/TEXT_ALIGN)
     CounterJob.Settings.AlignX = TEXT_ALIGN_CENTER 
