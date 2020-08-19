@@ -13,7 +13,10 @@ if CLIENT then --DON'T TOUCH THIS
 
 	--Logo of your server (can be from the game or an url). To have a good result please use a square logo
 	--Put "usesteamprofile" to set the Profile Steam Logo of the player
-	ContextMenuIdentity.Settings.Logo = "usesteamprofile"
+	ContextMenuIdentity.Settings.Logo = "https://mtxserv.com/forums/data/avatars/l/49/49891.jpg?1499247238"
+
+	--Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
+	ContextMenuIdentity.Settings.LogoName = "your_server_name/logo1.png"
 
 	--Name of the server
 	ContextMenuIdentity.Settings.Server = "mtxServ"
@@ -78,6 +81,8 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc                =>  Description of the button
 
 			Icon				=>  Icone of the button (keep empty to remove)
+	
+			IconName            		=>  Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
 
 			NotDrawLine			=> 	Don't show a line around the button ?
 
@@ -94,16 +99,16 @@ if CLIENT then --DON'T TOUCH THIS
 			DoFunc				=>  Action to execute
 
 			Space				=>  Make a space ? example : 	{
-												Name = "",
-												ColorLine = Color(255,255,255,255),
-												ColorText = Color(255,255,255,255),
-												DrawLineUp = true,
-												DrawLineDown = true,
-												Visibility = function(ply) 
-													return true
-												end,
-												Space = true,   
-											}, 
+																	Name = "",
+																	ColorLine = Color(255,255,255,255),
+																	ColorText = Color(255,255,255,255),
+																	DrawLineUp = true,
+																	DrawLineDown = true,
+																	Visibility = function(ply) 
+																		return true
+																	end,
+																	Space = true,   
+																}, 
 
 	--------------------------------------------------------------------------------------------------]]
 	ContextMenuIdentity.Settings.Button =
@@ -127,6 +132,7 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Drop money",
 			Space = false,
 			Icon = "numerix_context/money.png",
+			IconName = "your_server_name/icon1.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
@@ -145,6 +151,7 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Drop your actual weapon.",
 			Space = false,
 			Icon = "numerix_context/weapons.png",
+			IconName = "your_server_name/icon2.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
@@ -163,6 +170,7 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Call an admin if you have trouble.",
 			Space = false,
 			Icon = "numerix_context/staff.png",
+			IconName = "your_server_name/icon3.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
@@ -192,6 +200,7 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Link for the discord server.",
 			Space = false,
 			Icon = "numerix_context/discord.png",
+			IconName = "your_server_name/icon4.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
@@ -210,6 +219,7 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Link for the website.",
 			Space = false,
 			Icon = "numerix_context/site.png",
+			IconName = "your_server_name/icon5.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
@@ -228,6 +238,7 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Link for the forum.",
 			Space = false,
 			Icon = "numerix_context/forum.png",
+			IconName = "your_server_name/icon6.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
@@ -246,6 +257,7 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Link for the shop.",
 			Space = false,
 			Icon = "numerix_context/boutique.png",
+			IconName = "your_server_name/icon7.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
