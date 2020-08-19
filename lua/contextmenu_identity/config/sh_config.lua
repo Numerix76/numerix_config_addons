@@ -22,7 +22,7 @@ if CLIENT then --DON'T TOUCH THIS
 	ContextMenuIdentity.Settings.Server = "mtxServ"
 
 	--Border right (0 = no space)
-	ContextMenuIdentity.Settings.Border = ScrW()/1.03
+	ContextMenuIdentity.Settings.Border = function() return ScrW()/1.03 end
 
 	--Sier of the server text
 	ContextMenuIdentity.Settings.ServerSize = 30
