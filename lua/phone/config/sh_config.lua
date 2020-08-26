@@ -4,7 +4,7 @@ Phone made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Phone.Settings.VersionCustom = "1.0.3" --DON'T TOUCH THIS
+Phone.Settings.VersionCustom = "1.0.4" --DON'T TOUCH THIS
 
 --Change the language
 Phone.Settings.Language = "en"
@@ -56,6 +56,14 @@ Phone.Settings.GroupeAno = {
 	["superadmin"]	= true,
 	["admin"]		= true,
 }
+
+--ULX group that can open the menu via the command
+Phone.Settings.GroupeBypass = {
+	["superadmin"] = true,
+	["admin"] = true,
+}
+
+Phone.Settings.Command = "/phone"
 
 --TEAM that are in governement
 timer.Simple(1, function() --DON'T TOUCH
