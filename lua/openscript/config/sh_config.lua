@@ -4,7 +4,7 @@ OpenScript made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-OpenScript.Settings.VersionCustom = "1.0.0" --DON'T TOUCH THIS
+OpenScript.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
 
 --Change the language
 OpenScript.Settings.Language = "en"
@@ -19,28 +19,41 @@ OpenScript.Settings.ColorCommunity = Color(255,255,255,255)
 OpenScript.Settings.ColorTimeLeft = Color(255,255,255,255)
 
 --Opening time
-OpenScript.Settings.Horaire = 2580578841 --/!\ go to http://www.timestamp-tool.fr/ to get the value
+OpenScript.Settings.Horaire = 2598535036 --/!\ go to http://www.timestamp-tool.fr/ to get the value
 
 --Color of the Backgroud
 OpenScript.Settings.BackGroundColor = Color(0,0,0,255)
 
---Picture Background (url) (keep empty to desactivate)
-OpenScript.Settings.BackGroundImg = "https://www.orion-serv.fr/images/games/gmod.jpg"
+--Background of the menu (can be from the game or an url).  To have a good result please use a 1920x1080.
+--Put blur to have blur or color to choose a color
+--Keep empty to disable
+OpenScript.Settings.Background = "color"
+
+--Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
+OpenScript.Settings.BackgroundName = "your_server_name/backgroup1.png"
+
+--Only work if F4Menu.Settings.Background = "color"
+OpenScript.Settings.BackgroundColor = Color(0,0,0,255)
 
 --Buttons config
-OpenScript.Settings.Lien1Text = "Website"
-OpenScript.Settings.Lien1URL = "https://aliveroleplay.com"
-OpenScript.Settings.Lien1IMG = "numerix_f4menu/site.png"
+--Please be sure to change the name of OpenScript.Settings.LinkXName at the first config and when you update the config if you use a web image. (don't remove the .png)
+OpenScript.Settings.Link1Text = "Website"
+OpenScript.Settings.Link1URL = "https://mtxserv.com"
+OpenScript.Settings.Link1IMG = "numerix_context/site.png"
+OpenScript.Settings.Link1Name = "your_server_name/icon1.png"
 
-OpenScript.Settings.Lien2Text = "Shop"
-OpenScript.Settings.Lien2URL = "https://aliveroleplay.com/boutique"
-OpenScript.Settings.Lien2IMG = "numerix_f4menu/boutique.png"
+OpenScript.Settings.Link2Text = "Shop"
+OpenScript.Settings.Link2URL = "https://mtxserv.com/fr/hebergeur-serveur-garry-s-mod"
+OpenScript.Settings.Link2IMG = "numerix_context/boutique.png"
+OpenScript.Settings.Link2Name = "your_server_name/icon2.png"
 
-OpenScript.Settings.Lien3Text = "Forum"
-OpenScript.Settings.Lien3URL = "https://aliveroleplay.com/forum"
-OpenScript.Settings.Lien3IMG = "numerix_f4menu/forum.png"
+OpenScript.Settings.Link3Text = "Forum"
+OpenScript.Settings.Link3URL = "https://mtxserv.com/forums"
+OpenScript.Settings.Link3IMG = "numerix_context/forum.png"
+OpenScript.Settings.Link3Name = "your_server_name/icon3.png"
 
 OpenScript.Settings.DisconnectIMG = "numerix_echap/disconnect.png"
+OpenScript.Settings.DisconnectName = "your_server_name/icon4.png"
 
 --ULX group that can bypass
 OpenScript.Settings.GroupeBypass = {
