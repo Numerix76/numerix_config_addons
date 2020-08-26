@@ -4,7 +4,7 @@ ServerInfo made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-ServerInfo.Settings.VersionCustom = "1.0.0" --DON'T TOUCH THIS
+ServerInfo.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
 
 --Change the language
 ServerInfo.Settings.Language = "en"
@@ -28,6 +28,8 @@ ServerInfo.Settings.Server = "Your server name"
     Name                =>  Name of the button
 
     Icon				=>  Icone of the button (keep empty to remove)
+
+    IconName            =>  Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
 
     NotDrawLine			=> 	Don't show a line around the button ?
 
@@ -55,6 +57,7 @@ ServerInfo.Settings.Info = {
         end,
         Name = "Collection",
         Icon = "numerix_serverinfo/steam.png",
+        IconName = "your_server_name/icon1.png",
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -73,6 +76,7 @@ ServerInfo.Settings.Info = {
         end,
         Name = "Discord",
         Icon = "numerix_serverinfo/discord.png",
+        IconName = "your_server_name/icon2.png",
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -91,6 +95,7 @@ ServerInfo.Settings.Info = {
         end,
         Name = "Forum",
         Icon = "numerix_serverinfo/forum.png",
+        IconName = "your_server_name/icon3.png",
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -109,6 +114,7 @@ ServerInfo.Settings.Info = {
         end,
         Name = "Boutique",
         Icon = "numerix_serverinfo/boutique.png",
+        IconName = "your_server_name/icon4.png",
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -127,6 +133,7 @@ ServerInfo.Settings.Info = {
         end,
         Name = "Steam Group",
         Icon = "numerix_serverinfo/steam.png",
+        IconName = "your_server_name/icon5.png",
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
@@ -145,6 +152,7 @@ ServerInfo.Settings.Info = {
         end,
         Name = "Rules",
         Icon = "numerix_serverinfo/rules.png",
+        IconName = "your_server_name/icon6.png",
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
         ColorBase = Color(33, 31, 35, 200),
