@@ -4,7 +4,7 @@ Cinematic Intro made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Intro.Settings.VersionCustom = "1.0.2" --DON'T TOUCH THIS
+Intro.Settings.VersionCustom = "1.0.3" --DON'T TOUCH THIS
 
 --Change the language
 Intro.Settings.Language = "en"
@@ -26,14 +26,25 @@ Intro.Settings.Map["gm_construct"] = {
     AnimReturnPlayerHigh = 1500, --Camera height when return to player
     Speedback = 0.2, --Camera speed when return to player
     textend = "We wish you a good game on our server", --Return to Player Text
-    
+
+    --HUD to draw the text (edit only if you know what you are doing)
+    HUD = function(text) 
+        surface.SetFont("Intro.Text")
+        local textlenght, textheigth = surface.GetTextSize(text)
+        draw.RoundedBox(5, ScrW()/2 -textlenght/2 - 25, ScrH() - ScrH()/24 - textheigth*1.1, textlenght + 50, textheigth*1.2, Color(0,0,0,150))
+        draw.DrawText(text, "Intro.Text", ScrW()/2, ScrH() - ScrH()/24 - textheigth , color_white, TEXT_ALIGN_CENTER) 
+    end,
+
+    --Tall of each Black Strip (put 0 to disable)
+    BlackStripTall = function() return ScrH()/10 end,
+
     Camera = { 
         {
             startpos = Vector(-3526, 6241, 260),
             endpos = Vector(-3008, 5003, 275),
             startang = Angle(0,-140,0), 
             endang = Angle(0,172,0),
-            text = "Welcome on Name of Server",
+            text = "Welcome on Name of Server", --You can put \n to make a line break
             speed = 0.2,
             makefade = false,
         },
