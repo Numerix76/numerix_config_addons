@@ -4,7 +4,7 @@ Radio made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Radio.Settings.VersionCustom = "1.0.1" --DON'T TOUCH THIS
+Radio.Settings.VersionCustom = "1.0.3" --DON'T TOUCH THIS
 
 --Change the language
 Radio.Settings.Language = "en"
