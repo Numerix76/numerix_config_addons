@@ -59,7 +59,7 @@ Config::Set('mysql_db', 'XXXXX_sql');
 
   ![](/uploads/help/installer-gextension/installer-gextension2.png)
 
-  *Si ce n’est pas la cas, vous avez surement fait une erreur dans vos paramètres MySQL.  
+  * Si ce n’est pas la cas, vous avez surement fait une erreur dans vos paramètres MySQL.  
   Vérifiez les informations dans le fichier de configuration de GExtension.
 8. Cliquez sur `Retrieve` pour avoir votre licence, puis rentrez la license dans le champ destiné. 
 9. Cliquez sur `Start` et patientez le temps que l’installation se fasse. 
