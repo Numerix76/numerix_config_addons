@@ -57,10 +57,10 @@ Config::Set('mysql_db', 'XXXXX_sql');
 7. Accédez à votre site à l'aide de votre navigateur web (ex : gextension.mtxserv.com).  
   Vous arriverez donc sur cet page :
 
-![](/uploads/help/installer-gextension/installer-gextension2.png)
+  ![](/uploads/help/installer-gextension/installer-gextension2.png)
 
-Si ce n’est pas la cas, vous avez surement fait une erreur dans vos paramètres MySQL.  
-Vérifiez les informations dans le fichier de configuration de GExtension.
+  Si ce n’est pas la cas, vous avez surement fait une erreur dans vos paramètres MySQL.  
+  Vérifiez les informations dans le fichier de configuration de GExtension.
 8. Cliquez sur `Retrieve` pour avoir votre licence, puis rentrez la license dans le champ destiné. 
 9. Cliquez sur `Start` et patientez le temps que l’installation se fasse. 
 10. Connectez vous sur le panel web de GExtension. 
