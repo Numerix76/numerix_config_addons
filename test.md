@@ -58,17 +58,16 @@ Config::Set('mysql_db', 'XXXXX_sql');
   Vous arriverez donc sur cet page :
 
   ![](/uploads/help/installer-gextension/installer-gextension2.png)
-
-    Si ce n’est pas la cas, vous avez surement fait une erreur dans vos paramètres MySQL.  
-    Vérifiez les informations dans le fichier de configuration de GExtension.
+  | Si ce n’est pas la cas, vous avez surement fait une erreur dans vos paramètres MySQL.  
+  | Vérifiez les informations dans le fichier de configuration de GExtension.
   
-8\. Cliquez sur `Retrieve` pour avoir votre licence, puis rentrez la license dans le champ destiné. 
-9\. Cliquez sur `Start` et patientez le temps que l’installation se fasse. 
-10\. Connectez vous sur le panel web de GExtension. 
-11\. Cliquez sur le `Haut-parleur`, puis sur `Settings`.  
+8. Cliquez sur `Retrieve` pour avoir votre licence, puis rentrez la license dans le champ destiné. 
+9. Cliquez sur `Start` et patientez le temps que l’installation se fasse. 
+10. Connectez vous sur le panel web de GExtension. 
+11. Cliquez sur le `Haut-parleur`, puis sur `Settings`.  
 ![](/uploads/help/installer-gextension/installer-gextension1.png)
-12\. Allez dans `Languages`, puis cliquez sur `Add Language`. 
-13\. Ajoutez la langue que vous voulez. 14. Pour mettre par défaut une langue, allez dans `General`, puis choisissez la langue voulue et cliquez sur `Set for everyone`.
+12. Allez dans `Languages`, puis cliquez sur `Add Language`. 
+13. Ajoutez la langue que vous voulez. 14. Pour mettre par défaut une langue, allez dans `General`, puis choisissez la langue voulue et cliquez sur `Set for everyone`.
 
 GExtension est désormais installé sur votre hébergement web, passons maintenant à l’installation sur le serveur de jeu.
 
