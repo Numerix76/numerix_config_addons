@@ -54,7 +54,7 @@ Config::Set('mysql_db', 'XXXXX_sql');
 ```
 
 6. Sauvegardez et envoyez le fichier `config.php` sur le serveur FTP.
-7. Accédez à votre site à l'aide de votre navigateur web (ex : gextension.mtxserv.com).  
+7. Accédez à votre site à l'aide de votre navigateur web (ex : gextension.mtxserv.com).
   Vous arriverez donc sur cet page :
 
   ![](/uploads/help/installer-gextension/installer-gextension2.png)
