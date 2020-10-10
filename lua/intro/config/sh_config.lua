@@ -4,13 +4,16 @@ Cinematic Intro made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Intro.Settings.VersionCustom = "1.0.3" --DON'T TOUCH THIS
+Intro.Settings.VersionCustom = "1.0.4" --DON'T TOUCH THIS
 
 --Change the language
 Intro.Settings.Language = "en"
 
 --Command allowing the player to launch the intro when he wants (leave empty to desactivate)
 Intro.Settings.Commande = "/startintro"
+
+--Key (https://wiki.facepunch.com/gmod/Enums/KEY) to exit the intro.
+Intro.Settings.ExitKey = KEY_E
 
 --Use "numerix_addcampos" in order to add easely some scene
 Intro.Settings.Map["gm_construct"] = {
