@@ -4,7 +4,7 @@ Radio made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Radio.Language.VersionCustom = "1.0.3"
+Radio.Language.VersionCustom = "1.0.4"
 
 Radio.Language["custom"] = {
 	["The file does not exist."] = "The file does not exist.",
@@ -73,6 +73,9 @@ Radio.Language["custom"] = {
 	["Take"] = "Take",
 	["Private radio ?"] = "Private radio ?",
 	["Allow buddy (FPP) to use radio ?"] = "Allow buddy (FPP) to use radio ?",
+	
+	--1.0.4
+	["Check your console to have a debug trace"] = "Check your console to have a debug trace",
 
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
