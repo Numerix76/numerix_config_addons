@@ -4,7 +4,7 @@ Radio made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Radio.Language.VersionCustom = "1.0.4"
+Radio.Language.VersionCustom = "1.0.5"
 
 Radio.Language["custom"] = {
 	["The file does not exist."] = "The file does not exist.",
@@ -41,7 +41,7 @@ Radio.Language["custom"] = {
 	["URL SoundCloud invalid"] = "URL SoundCloud invalid",
 	["Please install a radio in the vehicle."] = "Please install a radio in the vehicle.",
 	["Retrieving data"] = "Retrieving data",
-	["Conversion %d%% | Estimated time left : %d seconds"] = "Conversion %d%% | Estimated time left : %d seconds",
+	["Conversion %d%%"] = "Conversion %d%%",
 	["An error occurred while retrieving the data. Contact an administrator if this persists."] = "An error occurred while retrieving the data. Contact an administrator if this persists.",
 
 	--1.0.1
