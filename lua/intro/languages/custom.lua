@@ -4,7 +4,7 @@ Cinematic Intro made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Intro.Language.VersionCustom = "1.0.3" --DON'T TOUCH THIS
+Intro.Language.VersionCustom = "1.0.4" --DON'T TOUCH THIS
 
 Intro.Language["custom"] = {
 	["Start the introduction"] = "Start the introduction",
@@ -18,10 +18,13 @@ Intro.Language["custom"] = {
 
 	--1.0.3
 	["An error occurred while converting. Contact an administrator if this persists. Error : %s"] = "An error occurred while converting. Contact an administrator if this persists. Error : %s",
-	["Conversion %d%% | Estimated time left : %d seconds"] = "Conversion %d%% | Estimated time left : %d seconds",
+	["Conversion %d%%"] = "Conversion %d%%",
 	["An error occurred while retrieving the data. Contact an administrator if this persists. Error : %s"] = "An error occurred while retrieving the data. Contact an administrator if this persists. Error : %s",
 	["URL too long (max: 512 characters)."] = "URL too long (max: 512 characters).",
 	["URL SoundCloud invalid"] = "URL SoundCloud invalid",
+	
+	--1.0.4
+	["PlayVideo config enable. You have to put a YouTube URL."] = "PlayVideo config enable. You have to put a YouTube URL.",
 	
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
