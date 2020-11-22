@@ -4,7 +4,7 @@ Cinematic Intro made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Intro.Settings.VersionCustom = "1.0.4" --DON'T TOUCH THIS
+Intro.Settings.VersionCustom = "1.0.5" --DON'T TOUCH THIS
 
 --Change the language
 Intro.Settings.Language = "en"
@@ -24,6 +24,7 @@ Intro.Settings.Map["gm_construct"] = {
     AlwaysShow = false, --Display the menu when the player joins the server each time or no longer display it when he has seen the intro at least once?
     ForceIntro = false, --Remove the "Skip introduction" button ?
     URLMusic = "https://gmod-radio-numerix.mtxserv.com/exemple/Calvin%20Harris%20-%20Summer.mp3", --Music link (Youtube, Soundcloud or mp3)
+    PlayVideo = false, --Should we play a video youtube instead of using camera
     MusicVolume = 0.3, --Music volume (between 0 and 1)
     AnimReturnPlayer = true, --Return to the player once the intro is finished?
     AnimReturnPlayerHigh = 1500, --Camera height when return to player
