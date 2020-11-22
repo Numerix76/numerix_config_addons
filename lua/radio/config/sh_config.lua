@@ -4,13 +4,16 @@ Radio made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Radio.Settings.VersionCustom = "1.0.5" --DON'T TOUCH THIS
+Radio.Settings.VersionCustom = "1.0.6" --DON'T TOUCH THIS
 
 --If debug true then if there is a problem you will have the line related in the console
 Radio.Settings.Debug = false
 
 --Change the language
 Radio.Settings.Language = "en"
+
+--Put you API Key for youtube (Tutorial to get it : https://www.slickremix.com/docs/get-api-key-for-youtube/)
+Radio.Settings.APIKey = ""
 
 --Change the distance max of the radio
 Radio.Settings.DistanceSound = 400
