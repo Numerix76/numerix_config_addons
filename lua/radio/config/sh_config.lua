@@ -4,7 +4,7 @@ Radio made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Radio.Settings.VersionCustom = "2.0.0" --DON'T TOUCH THIS
+Radio.Settings.VersionCustom = "2.0.1" --DON'T TOUCH THIS
 
 --If debug true then if there is a problem you will have the line related in the console
 Radio.Settings.Debug = false
@@ -137,6 +137,6 @@ Radio.Settings.Navigation =
 
 			menu:Close()
         end,
-        Visible = function(ply, ent) return Radio.Settings.EnableSWEP and ent.ENTRadio end,
+       	Visible = function(ply, ent) return Radio.Settings.EnableSWEP and ent.ENTRadio and !ply:HasWeapon("numerix_radio_swep") end,
     },
 }
