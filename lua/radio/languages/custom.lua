@@ -4,14 +4,12 @@ Radio made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Radio.Language.VersionCustom = "2.0.0"
+Radio.Language.VersionCustom = "2.0.1"
 
 Radio.Language["custom"] = {
 	["The file does not exist."] = "The file does not exist.",
 	["Check the URL of .mp3."] = "Check the URL of .mp3.",
 	["An error occurred while retrieving the data. Contact an administrator if this persists. Error : %s"] = "An error occurred while retrieving the data. Contact an administrator if this persists. Error : %s",
-	["An error occurred while converting. Contact an administrator if this persists. Error : %s"] = "An error occurred while converting. Contact an administrator if this persists. Error : %s",
-	["An error occurred while retrieving the data. Contact an administrator if this persists."] = "An error occurred while retrieving the data. Contact an administrator if this persists.",
 	["An error occured. Check the message in chat"] = "An error occured. Check the message in chat",
 	["Radio management"] = "Radio management",
 	["Enter a Youtube/MP3/SoundCloud URL"] = "Enter a Youtube/MP3/SoundCloud URL",
@@ -33,7 +31,6 @@ Radio.Language["custom"] = {
 	["Rainbow mode ?"] = "Rainbow mode ?",
 	["Please install a radio in the vehicle."] = "Please install a radio in the vehicle.",
 	["Retrieving data"] = "Retrieving data",
-	["Conversion %d%%"] = "Conversion %d%%",
 	["No result"] = "No result",
 	["Search"] = "Search",
 	["Searching..."] = "Searching...",
@@ -60,7 +57,17 @@ Radio.Language["custom"] = {
 	["Check your console to have a debug trace"] = "Check your console to have a debug trace",
 	["Radio Internet"] = "Radio Internet",
 
+	["Connection to the backend"] = "Connecting to the backend",
+	["Starting download"] = "Starting the download on the backend",
+	["Download progress"] = "Download progress on the backend : %.2f%%",
+	["Finished download"] = "Finished the download on the backend",
+	["Starting conversion"] = "Starting the conversion on the backend",
+	["Conversion progress"] = "Conversion progress on the backend : %.2f%%",
+	["Finished conversion"] = "Finished the conversion on the backend",
+	["Logs"] = "Logs",
+
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
 	["A new version of the addon is available. Please download it."] = "A new version of the addon is available. Please download it.",
+	["The module GWSocket is not present on the server"] = "The module GWSocket is not present on the server. Please follow the instructions on https://steamcommunity.com/sharedfiles/filedetails/?id=1989484474 to install it",
 }
