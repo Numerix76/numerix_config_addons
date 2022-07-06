@@ -4,7 +4,7 @@ Radio made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Radio.Language.VersionCustom = "2.0.1"
+Radio.Language.VersionCustom = "2.0.2"
 
 Radio.Language["custom"] = {
 	["The file does not exist."] = "The file does not exist.",
@@ -56,6 +56,7 @@ Radio.Language["custom"] = {
 	["Allow buddy (FPP) to use radio ?"] = "Allow buddy (FPP) to use radio ?",
 	["Check your console to have a debug trace"] = "Check your console to have a debug trace",
 	["Radio Internet"] = "Radio Internet",
+	["You are not an admin, you can't use that radio."] = "You are not an admin, you can't use that radio.",
 
 	["Connection to the backend"] = "Connecting to the backend",
 	["Starting download"] = "Starting the download on the backend",
@@ -65,6 +66,8 @@ Radio.Language["custom"] = {
 	["Conversion progress"] = "Conversion progress on the backend : %.2f%%",
 	["Finished conversion"] = "Finished the conversion on the backend",
 	["Logs"] = "Logs",
+	["Can't connect to the backend or the conversion take too long. (%s)"] = "Can't connect to the backend or the conversion take too long. (%s)",
+	["Conversion on the backend (this can take some time)"] = "Conversion on the backend (this can take some time)",
 
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
