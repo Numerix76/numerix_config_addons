@@ -4,7 +4,7 @@ Cinematic Intro made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Intro.Language.VersionCustom = "1.0.5" --DON'T TOUCH THIS
+Intro.Language.VersionCustom = "1.0.6" --DON'T TOUCH THIS
 
 Intro.Language["custom"] = {
 	["Start the introduction"] = "Start the introduction",
@@ -39,6 +39,10 @@ Intro.Language["custom"] = {
 	["Is ready to be used"] = "Is ready to be used",
 	["Failed to setup the addon please check the server console for more information."] = "Failed to setup the addon please check the server console for more information.",
 	["The addon is not ready actually. Please retry later."] = "The addon is not ready actually. Please retry later.",
+	
+	--1.0.6
+	["Can't connect to the backend or the conversion take too long. (%s)"] = "Can't connect to the backend or the conversion take too long. (%s)",
+	["Conversion on the backend (this can take some time)"] = "Conversion on the backend (this can take some time)",
 
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
