@@ -4,7 +4,7 @@ ContextMenu Identity made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-ContextMenuIdentity.Settings.VersionDefault = "1.0.4" --DON'T TOUCH THIS
+ContextMenuIdentity.Settings.VersionCustom = "1.0.5" --DON'T TOUCH THIS
 
 --Change the language
 ContextMenuIdentity.Settings.Language = "en"
@@ -14,9 +14,6 @@ if CLIENT then --DON'T TOUCH THIS
 	--Logo of your server (can be from the game or an url). To have a good result please use a square logo
 	--Put "usesteamprofile" to set the Profile Steam Logo of the player
 	ContextMenuIdentity.Settings.Logo = "https://mtxserv.com/forums/data/avatars/l/49/49891.jpg?1499247238"
-
-	--Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
-	ContextMenuIdentity.Settings.LogoName = "your_server_name/logo1.png"
 
 	--Name of the server
 	ContextMenuIdentity.Settings.Server = "mtxServ"
