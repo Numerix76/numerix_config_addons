@@ -4,13 +4,17 @@ Radio made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Radio.Settings.VersionCustom = "2.0.2" --DON'T TOUCH THIS
+Radio.Settings.VersionCustom = "2.0.3" --DON'T TOUCH THIS
 
 --If debug true then if there is a problem you will have the line related in the console
 Radio.Settings.Debug = false
 
 --Change the language
 Radio.Settings.Language = "en"
+
+--If set to true, the addon will use the HTTP library from the game for running music. You will not being able to see the status of the conversion.
+--If set to false, the addon will need GWSocket (see : https://steamcommunity.com/sharedfiles/filedetails/?id=1989484474). You wiil be able to see the status of the conversion.
+Radio.Settings.DegradeMode = true
 
 --Change the distance max of the radio
 Radio.Settings.DistanceSoundRadio = 400
@@ -50,6 +54,15 @@ Radio.Settings.VehicleSpawnRadio = false
 
 --Can radio in vehicle can be retrieve from it ?
 Radio.Settings.VehicleSpawnRadioRetrieve = true
+
+--Allow the radio to explode if took too much damage ?
+Radio.Settings.ExplodeDamage = true
+
+--How much health do the radio have ?
+Radio.Settings.RadioHealth = 200
+
+--How much health do the server have ?
+Radio.Settings.ServerHealth = 300
 
 hook.Add( "DarkRPFinishedLoading", "Radio:DarkRPInitialized", function() --DON'T TOUCH THIS
 	--Put the TEAM of your job radio
