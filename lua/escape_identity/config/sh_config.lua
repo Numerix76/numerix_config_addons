@@ -4,7 +4,7 @@ Escape made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Echap.Settings.VersionCustom = "1.0.9" --DON'T TOUCH THIS
+Echap.Settings.VersionCustom = "1.1.0" --DON'T TOUCH THIS
 
 --Change the language
 Echap.Settings.Language = "en"
@@ -13,16 +13,10 @@ Echap.Settings.Language = "en"
 --Put "usesteamprofile" to set the Profile Steam Logo of the player
 Echap.Settings.Logo = "https://mtxserv.com/forums/data/avatars/l/49/49891.jpg?1499247238"
 
---Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
-Echap.Settings.LogoName = "your_server_name/logo1.png"
-
 --Background of the menu (can be from the game or an url).  To have a good result please use a 1920x1080.
 --Put blur to have blur or color to choose a color
 --Keep empty to disable
-Echap.Settings.Background = ""
-
---Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
-Echap.Settings.BackgroundName = "your_server_name/backgroup1.png"
+Echap.Settings.Background = "blur"
 
 --Only work if Echap.Settings.Background = "color"
 Echap.Settings.BackgroundColor = Color(0,0,0,255)
@@ -38,7 +32,7 @@ If you have a question or a problem make a message with the '///' to contact the
 Echap.Settings.TexteSize = 30
 
 --URL for the tab Server
-Echap.Settings.URLServesTabs = "https://gmod-radio-numerix.mtxserv.com/escape_api/php_api/shb_api.php"
+Echap.Settings.URLServesTabs = "https://gmod-radio-numerix.mtxserv.com/escape_api/steam_api.php"
 
 --Enable the compatibility with https://www.gmodstore.com/market/view/updatenotify-discord-inspired-update-notification-system ?
 Echap.Settings.UseUpdateNotify = false
@@ -90,8 +84,6 @@ Echap.Settings.Tags = {
 
         Icon                =>  Change the icon of a button (can be a url or game file)
 
-        IconName            =>  Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
-
         Visible             =>  Return if the button can be see for the player
 
         NotDrawLine         =>  Draw a line around the button ?
@@ -111,7 +103,6 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Home",
         OnLoadInit = false,
         Icon = "numerix_echap/play-button.png",
-        IconName = "your_server_name/icon1.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -131,7 +122,6 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_News",
         OnLoadInit = false,
         Icon = "numerix_echap/newspaper.png",
-        IconName = "your_server_name/icon2.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -148,7 +138,6 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Chat",
         OnLoadInit = false,
         Icon = "numerix_echap/chat.png",
-        IconName = "your_server_name/icon3.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -165,7 +154,6 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Rules",
         OnLoadInit = false,
         Icon = "numerix_echap/settings.png",
-        IconName = "your_server_name/icon4.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -186,7 +174,6 @@ Echap.Settings.Navigation =
         WebsiteEnabled = true,
         WebsiteURL = "https://google.com/",
         Icon = "numerix_echap/cursor.png",
-        IconName = "your_server_name/icon5.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -204,7 +191,6 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Servers",
         OnLoadInit = false,
         Icon = "numerix_echap/server.png",
-        IconName = "your_server_name/icon6.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -222,7 +208,6 @@ Echap.Settings.Navigation =
         DoLoadPanel = "Echap_Tab_Servers",
         OnLoadInit = false,
         Icon = "numerix_echap/disconnect.png",
-        IconName = "your_server_name/icon7.png",
         Visible = function(ply) return true end,
         NotDrawLine = false,
         ColorLine = Color( 255, 255, 255, 100 ),
@@ -237,14 +222,14 @@ Echap.Settings.Navigation =
     },
 }
 
---Add server that will be show in the server tab
+--Add server that will be show in the server tab (use the real IP and not the domain name)
 Echap.Settings.Server =
 {
     {
         Enabled = true,
         Name = "Example",
         Desc = [[Example of description]],
-        IP = "game-fr-40.mtxserv.com",
+        IP = "51.255.215.52",
         Port = "27120",
         Map = true,
     },   
