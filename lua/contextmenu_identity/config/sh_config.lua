@@ -4,7 +4,7 @@ ContextMenu Identity made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-ContextMenuIdentity.Settings.VersionCustom = "1.0.5" --DON'T TOUCH THIS
+ContextMenuIdentity.Settings.VersionCustom = "1.0.6" --DON'T TOUCH THIS
 
 --Change the language
 ContextMenuIdentity.Settings.Language = "en"
@@ -16,7 +16,7 @@ if CLIENT then --DON'T TOUCH THIS
 	ContextMenuIdentity.Settings.Logo = "https://mtxserv.com/forums/data/avatars/l/49/49891.jpg?1499247238"
 
 	--Name of the server
-	ContextMenuIdentity.Settings.Server = "mtxServ"
+	ContextMenuIdentity.Settings.Server = "mTxServ"
 
 	--Border right (0 = no space)
 	ContextMenuIdentity.Settings.Border = function() return ScrW()/1.03 end
@@ -55,13 +55,13 @@ if CLIENT then --DON'T TOUCH THIS
 			Value = function(ply) return "SteamID :"..ply:SteamID() end,
 		},
 		{
-			Enabled = true,
+			Enabled = DarkRP, -- Check if gamemode is DarkRP
 			Value = function(ply) return "Money :"..ply:getDarkRPVar("money").."$" end,
 		},
 		{
 			Enabled = true,
 			Value = function(ply) 
-				if DarkRP.disabledDefaults["modules"]["hungermod"] then
+				if !DarkRP and true or DarkRP.disabledDefaults["modules"]["hungermod"] then
 					return "Health : "..ply:Health().."  Amor : "..ply:Armor() 
 				else
 					return "Health : "..ply:Health().."  Amor : "..ply:Armor().."  Food : "..math.Round(ply:getDarkRPVar( "Energy" ))
@@ -77,9 +77,7 @@ if CLIENT then --DON'T TOUCH THIS
 
 			Desc                =>  Description of the button
 
-			Icon				=>  Icone of the button (keep empty to remove)
-	
-			IconName            		=>  Please be sure to change the name of this at the first config and when you update the config if you use a web image. (don't remove the .png)
+			Icon				=>  Icon of the button (keep empty to remove) (can be an url)
 
 			NotDrawLine			=> 	Don't show a line around the button ?
 
@@ -129,7 +127,6 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Drop money",
 			Space = false,
 			Icon = "numerix_context/money.png",
-			IconName = "your_server_name/icon1.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
@@ -148,7 +145,6 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Drop your actual weapon.",
 			Space = false,
 			Icon = "numerix_context/weapons.png",
-			IconName = "your_server_name/icon2.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
@@ -167,7 +163,6 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Call an admin if you have trouble.",
 			Space = false,
 			Icon = "numerix_context/staff.png",
-			IconName = "your_server_name/icon3.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
@@ -197,7 +192,6 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Link for the discord server.",
 			Space = false,
 			Icon = "numerix_context/discord.png",
-			IconName = "your_server_name/icon4.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
@@ -216,7 +210,6 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Link for the website.",
 			Space = false,
 			Icon = "numerix_context/site.png",
-			IconName = "your_server_name/icon5.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
@@ -235,7 +228,6 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Link for the forum.",
 			Space = false,
 			Icon = "numerix_context/forum.png",
-			IconName = "your_server_name/icon6.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
@@ -254,7 +246,6 @@ if CLIENT then --DON'T TOUCH THIS
 			Desc = "Link for the shop.",
 			Space = false,
 			Icon = "numerix_context/boutique.png",
-			IconName = "your_server_name/icon7.png",
 			NotDrawLine = false,
 			ColorLine = Color( 255, 255, 255, 100 ),
 			ColorBase = Color(33, 31, 35, 200),
