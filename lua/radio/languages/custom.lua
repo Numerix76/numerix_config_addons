@@ -4,7 +4,7 @@ Radio made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Radio.Language.VersionCustom = "2.0.2"
+Radio.Language.VersionCustom = "2.0.3"
 
 Radio.Language["custom"] = {
 	["The file does not exist."] = "The file does not exist.",
@@ -59,9 +59,6 @@ Radio.Language["custom"] = {
 	["You are not an admin, you can't use that radio."] = "You are not an admin, you can't use that radio.",
 
 	["Connection to the backend"] = "Connecting to the backend",
-	["Starting download"] = "Starting the download on the backend",
-	["Download progress"] = "Download progress on the backend : %.2f%%",
-	["Finished download"] = "Finished the download on the backend",
 	["Starting conversion"] = "Starting the conversion on the backend",
 	["Conversion progress"] = "Conversion progress on the backend : %.2f%%",
 	["Finished conversion"] = "Finished the conversion on the backend",
@@ -73,4 +70,10 @@ Radio.Language["custom"] = {
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
 	["A new version of the addon is available. Please download it."] = "A new version of the addon is available. Please download it.",
 	["The module GWSocket is not present on the server"] = "The module GWSocket is not present on the server. Please follow the instructions on https://steamcommunity.com/sharedfiles/filedetails/?id=1989484474 to install it",
+
+	["An error occured while uploading the file. (%s)"] = "An error occured while uploading the file. (%s)",
+	["Downloading the video on the server."] = "Downloading the video on the server.",
+	["The server IP seems to be banned from the google video services. Please contact the server owner."] = "The server IP seems to be banned from the google video services. Please contact the server owner.",
+	["An error occured while downloading the file. (%s)"] = "An error occured while downloading the file. (%s)",
+	["Starting the upload of the video to the backend."] = "Starting the upload of the video to the backend."
 }
