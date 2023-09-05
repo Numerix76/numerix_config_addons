@@ -4,7 +4,7 @@ Cinematic Intro made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-Intro.Language.VersionCustom = "1.0.6" --DON'T TOUCH THIS
+Intro.Language.VersionCustom = "1.0.7" --DON'T TOUCH THIS
 
 Intro.Language["custom"] = {
 	["Start the introduction"] = "Start the introduction",
@@ -39,7 +39,7 @@ Intro.Language["custom"] = {
 	["Is ready to be used"] = "Is ready to be used",
 	["Failed to setup the addon please check the server console for more information."] = "Failed to setup the addon please check the server console for more information.",
 	["The addon is not ready actually. Please retry later."] = "The addon is not ready actually. Please retry later.",
-	
+
 	--1.0.6
 	["Can't connect to the backend or the conversion take too long. (%s)"] = "Can't connect to the backend or the conversion take too long. (%s)",
 	["Conversion on the backend (this can take some time)"] = "Conversion on the backend (this can take some time)",
@@ -47,4 +47,11 @@ Intro.Language["custom"] = {
 	["A new version of the config file is available. Please download it."] = "A new version of the config file is available. Please download it.",
 	["A new version of the language file is available. Please download it."] = "A new version of the language file is available. Please download it.",
 	["A new version of the addon is available. Please download it."] = "A new version of the addon is available. Please download it.",
+	
+	--1.0.7
+	["An error occured while uploading the file. (%s)"] = "An error occured while uploading the file. (%s)",
+	["Downloading the video on the server."] = "Downloading the video on the server.",
+	["The server IP seems to be banned from the google video services. Please contact the server owner."] = "The server IP seems to be banned from the google video services. Please contact the server owner.",
+	["An error occured while downloading the file. (%s)"] = "An error occured while downloading the file. (%s)",
+	["Starting the upload of the video to the backend."] = "Starting the upload of the video to the backend."
 }
