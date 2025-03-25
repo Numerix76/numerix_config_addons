@@ -4,7 +4,7 @@ F4Menu made by Numerix (https://steamcommunity.com/id/numerix/)
 
 --------------------------------------------------------------------------------------------------]]
 
-F4Menu.Settings.VersionCustom = "1.0.9" --DON'T TOUCH THIS
+F4Menu.Settings.VersionCustom = "1.2.0" --DON'T TOUCH THIS
 
 --Change the language
 F4Menu.Settings.Language = "en"
